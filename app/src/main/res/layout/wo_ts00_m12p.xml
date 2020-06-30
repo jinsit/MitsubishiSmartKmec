@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+   <TextView
+         style="@style/colortext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+           android:text="Engineer 도착 시간은 어떻습니까?" />
+   
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <TextView
+            android:id="@+id/btn_fr_A1"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_fr_A2"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_fr_A3"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_fr_A4"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/btn_fr_A5"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+   
+    <TextView
+         style="@style/colortext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:text="Engineer 서비스는 어떻습니까?" 
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+   <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+    <TextView
+        android:id="@+id/btn_fr_B1"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"/> 
+    <TextView
+        android:id="@+id/btn_fr_B2"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"/> 
+    <TextView
+        android:id="@+id/btn_fr_B3"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"/> 
+    <TextView
+        android:id="@+id/btn_fr_B4"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" /> 
+    <TextView
+        android:id="@+id/btn_fr_B5"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" /> 
+   </LinearLayout>
+   
+   <ImageView
+        android:id="@+id/img_fr_sign"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+        android:paddingRight="@dimen/comm_small_attendantsMargin"
+        android:background="@drawable/bg_sign_default"
+        android:scaleType="fitXY"
+        android:gravity="center"/>
+   
+    <TextView
+        android:id="@+id/btn_fr_approve"
+        style="@style/mosttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+        android:paddingRight="@dimen/comm_small_attendantsMargin"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="승인" />
+
+
+
+</LinearLayout>

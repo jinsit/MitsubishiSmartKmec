@@ -1,0 +1,101 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/lowerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+
+        <TextView
+            android:id="@+id/tv_empId2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="126dp" android:textSize="35sp"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+             />
+
+        <TextView
+            android:id="@+id/tv_empId3"
+            android:layout_width="wrap_content" android:textSize="35sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+            />
+
+        <TextView
+            android:id="@+id/tv_empId4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_empId2"
+            android:layout_alignBottom="@+id/tv_empId2"
+            android:layout_alignParentRight="true"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_empId5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+            android:textSize="35sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_empId6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+            android:textSize="35sp"
+             />
+
+
+        <TextView
+            android:id="@+id/tv_empId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pdf_empid"
+            android:textSize="35sp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

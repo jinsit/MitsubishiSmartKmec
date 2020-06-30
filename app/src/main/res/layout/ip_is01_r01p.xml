@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textfirstlinebg" />
+    <!-- [1] -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+            <TextView
+                android:id="@+id/tv01_is_p01_bldgNo"
+                style="@style/mosttext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+            <TextView
+                android:id="@+id/tv02_is_p01_bldgNm"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+            <TextView
+                android:id="@+id/tv03_is_p01_contrTpCd"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv04_is_p01_contrTpNm"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+            <TextView
+                android:id="@+id/tv05_is_p01_jobFigureStatus"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv06_is_p01_endVal"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textlastlinebg" />
+    <!-- [2] -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 전체 & 계획 & 완료 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv07_is_p01_kind01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/tab_bttom_btn_off"
+                android:gravity="center" android:textColor="#000000"
+                android:text="전체"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv08_is_p01_kind02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/tab_ip_is01_r01p"
+                android:gravity="center" android:textColor="#000000"
+                android:text="계획"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tv09_is_p01_kind03"
+                android:layout_width="0dp" android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/tab_ip_is01_r01p"
+                android:gravity="center"
+                android:text="완료"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv01_is_p01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

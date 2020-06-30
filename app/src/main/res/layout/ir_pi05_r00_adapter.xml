@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_marginRight="@dimen/comm_listitem_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_pitem_no"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="품번" />
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_ds_draw_no"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="도번" />
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_gl_no"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="GL 번호" />
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_qty"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="수량" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_marginRight="@dimen/comm_listitem_margin"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_ds_draw_nm"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="도명/변수" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_marginRight="@dimen/comm_listitem_margin"
+            android:layout_weight="1"
+            android:weightSum="15">
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_itemno"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="left"
+                android:text="Item-no" />
+
+            <TextView
+                android:id="@+id/tv_pi_adapter_remark"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:text="비고" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

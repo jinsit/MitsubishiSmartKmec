@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_bg"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:background="#f8f8f8">
+
+        <TextView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_menu" />
+
+        <TextView
+            style="@style/btn_menutitletext"
+            android:id="@+id/tv_menutitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="선 택"
+            android:textSize="@dimen/comm_listitem_default_fontSize" />
+    </RelativeLayout>
+    
+</LinearLayout>

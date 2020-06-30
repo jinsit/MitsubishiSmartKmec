@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lv_bg350"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center"
+        android:layout_height="@dimen/comm_listitem4_height"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:orientation="vertical" >
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+ <TextView
+            android:id="@+id/tv_wo_jobTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_wo_workNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="Medium Text"
+                android:textColor="@color/comm_popup_title_fontColor"
+                android:textSize="@dimen/comm_listitem_bold_fontSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+       
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_wo_carNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Large Text1"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize"
+                />
+
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_wo_bldgNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Large Text2" android:singleLine="true"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize"
+                android:textStyle="bold" />
+
+           
+        </LinearLayout>
+
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+   		<TextView
+            android:id="@+id/tv_wo_st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView1" />
+
+        <TextView
+            android:id="@+id/tv_wo_checkSt"
+             android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" android:visibility="invisible"
+                android:gravity="right"
+            android:text="TextView2" />
+        </LinearLayout>
+       
+    </LinearLayout>
+
+</LinearLayout>

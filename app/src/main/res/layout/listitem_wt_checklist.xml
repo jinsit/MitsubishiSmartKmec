@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wt_checkList_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:id="@+id/ll_wt_checkList"
+        android:layout_height="@dimen/comm_listitem2_height"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_bold_fontSize"
+        android:weightSum="14" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_wt_checkNm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="left|center"
+                android:text="TextView" />
+
+            <View android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/comm_bg"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/checkTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="점검방법"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/comm_bg"
+                />
+
+            <TextView
+                android:id="@+id/checkCycleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="주기" />
+
+        </LinearLayout>
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/comm_bg"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/prevCheckMonthTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="점검방법"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/comm_bg"
+                />
+            <!-- 이전점검결과값 표시위해 추가 20181218 yowonsm -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_wt_preInputTp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/a_on" />
+
+                <TextView
+                    android:id="@+id/tv_wt_preInputTp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/tv_inquerydate"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/comm_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5" >
+
+
+            <RadioGroup
+                android:id="@+id/rdg_wt_abc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/cb_wt_holdOver"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rd_wt_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:checked="true" android:button="@drawable/radiobtn_a"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/rd_wt_b"
+                    android:layout_width="wrap_content"  android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobtn_b"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rd_wt_c"
+                    android:layout_width="wrap_content" android:button="@drawable/radiobtn_c"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rd_wt_none"
+                    android:layout_width="wrap_content" android:button="@drawable/radiobtn_none"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rdg_wt_ox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/cb_wt_holdOver"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" >
+
+                <RadioButton
+                    android:id="@+id/rd_wt_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" android:layout_weight="1"
+                    android:button="@drawable/radiobtn_o"
+                    />
+                <!-- <RadioButton
+                    android:button="@drawable/radiobtn_o"
+                    android:layout_width="wrap_content" android:visibility="invisible"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    /> -->
+
+                <RadioButton
+                    android:id="@+id/rd_wt_x" android:button="@drawable/radiobtn_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+
+                    />
+                <RadioButton
+                    android:id="@+id/rd_wt_none_ox"
+                    android:layout_width="wrap_content" android:button="@drawable/radiobtn_none_ox"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/et_wt_numeric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"   android:background="@drawable/tv_inquerydate"
+                android:layout_alignLeft="@+id/rdg_wt_abc" android:visibility="visible"
+                android:layout_toLeftOf="@+id/cb_wt_holdOver"
+                android:layout_centerVertical="true"
+                android:inputType="number" >
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:id="@+id/ll_wt_checkList_rmk" android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:weightSum="10" >
+        <TextView
+            android:layout_width="0dip" android:layout_weight="2"
+            android:layout_height="@dimen/comm_listitem12_height"
+            android:text="비고: "
+            />
+        <TextView
+            android:id="@+id/tv_wt_rmk"
+            android:layout_width="0dip" android:layout_weight="8"
+            android:layout_height="@dimen/comm_listitem12_height"
+            android:hint="반드시 비고사항을 작성하십시오."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wt_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_textitem140_height"
+        android:background="@color/comm_edit_bg"
+        >
+        <TextView
+            android:id="@+id/tv_wt_headerNm"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="left|center"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_marginRight="@dimen/comm_listitem_margin"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

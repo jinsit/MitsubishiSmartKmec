@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_pi_bldgNm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+
+            <TextView
+                android:id="@+id/tv_pi_bldgNm"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/search_building" />
+
+            <TextView
+                android:id="@+id/btn_pi_bldgNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:background="@drawable/btn_inquerybldg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pi_CarNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+
+            <TextView
+                android:id="@+id/tv_pi_CarNo"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/search_carno" />
+
+            <TextView
+                android:id="@+id/btn_pi_CarNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:background="@drawable/btn_inquerycarno" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pi_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_listitem3_height"
+            android:background="@color/comm_listtitlebg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="품번" />
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="도번" />
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5"
+                    android:text="GL번호" />
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:text="수량" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:text="도명/변수" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:text="ITEM-NO" />
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:text="비고" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+
+        <ListView
+            android:id="@+id/lv_pi_partsInfoCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp">
+        <!-- 545sp -->
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+
+</FrameLayout>

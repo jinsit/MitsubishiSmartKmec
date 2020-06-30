@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kr.mitsubishi.MainActivity" >
+    
+<item
+    android:id="@+id/menu_ip_wo_sort_job" android:title="작업별"/>
+<item
+    android:id="@+id/menu_ip_wo_sort_car" android:title="호기별"/>
+<item
+    android:id="@+id/menu_ip_wo_sort_bldg" android:title="빌딩별"/>
+
+</menu>

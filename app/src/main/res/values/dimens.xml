@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 홈화면 -->
+    <dimen name="comm_home_noticeTitle">100sp</dimen>
+    <dimen name="comm_home_jobListTitle">53.5sp</dimen>
+    
+    <!-- 공통으로 쓰이는 한줄 조회 조건 있는 부분(날짜 조회/ 빌딩 조회 등) -->
+    <dimen name="comm_onelineinqueryHeight">58.5sp</dimen>
+
+    <!-- Default 여백 -->
+    <dimen name="comm_default_topHalfMargin">3.5sp</dimen>
+    <dimen name="comm_default_topMargin">7.5sp</dimen>
+    <dimen name="comm_default_attendantsMargin">21.25sp</dimen>
+    <dimen name="comm_small_attendantsMargin">8.75sp</dimen>
+    
+    	<!-- image width&height -->
+    	<dimen name="comm_img_width">120sp</dimen>
+    	<dimen name="comm_img_height">120sp</dimen>
+    
+    
+    
+    <!-- List 기본 -->
+    <dimen name="comm_listitem_margin">21.25sp</dimen>
+    <dimen name="comm_listitem_bold_fontSize">14sp</dimen>
+    <dimen name="comm_listitem_default_fontSize">13sp</dimen>
+
+    
+    <!--  textSize -->
+    <dimen name="comm_textitem_48Size">12sp</dimen>
+    <dimen name="comm_textitem_56Size">14sp</dimen>
+      <dimen name="comm_textitem_60Size">15sp</dimen>
+    <dimen name="comm_textitem_66Size">16.5sp</dimen>
+    
+    <!-- List Item Title -->
+    <dimen name = "comm_listHeader_height">22.5sp</dimen>
+    <dimen name = "comm_listHeader2_height">40sp</dimen>
+    <!-- List Item 1/2줄 -->
+    	<dimen name="comm_listitem12_height">22sp</dimen>
+    	<dimen name="comm_listitem24_height">44sp</dimen>
+    <!-- TextItem 도저히 안될때 -->
+    <dimen name="comm_textitem110_height">27.5sp</dimen>
+    <dimen name="comm_textitem133_height">33sp</dimen>
+    <!-- TextItem 디폴트 height -->
+    <dimen name="comm_textitem140_height">35sp</dimen>
+
+    <!-- List Item 1줄 -->
+    <dimen name="comm_listitem1_height">45sp</dimen>
+    <!-- List Item 2줄 -->
+    <dimen name="comm_listitem2_height">62.5sp</dimen>
+    <!-- List Item 3줄 -->
+    <dimen name="comm_listitem3_height">62.5sp</dimen>
+
+    <!-- List Item 4줄 -->
+    <dimen name="comm_listitem4_height">87.5sp</dimen>
+    <!-- List Item 5줄 -->
+    <dimen name="comm_listitem5_height">87.5sp</dimen>
+
+    <!-- 팝업 -->
+    <dimen name="comm_popup_default_margin">8.75sp</dimen>
+    <dimen name="comm_popup_default_height">567sp</dimen>
+    <dimen name="comm_popup_default_width">350sp</dimen>
+    
+    <!-- 상단 타이틀 -->
+    <dimen name="comm_title_height">47.5sp</dimen>
+    <dimen name="comm_title_fontsize">21sp</dimen>
+
+    <!-- 하단 토글위젯 -->
+    <dimen name="comm_bottom_widget_height">71sp</dimen>
+     <dimen name="comm_bottom_widget_height2">81sp</dimen>
+	<dimen name="comm_bottom_tab_height">61sp</dimen>
+    <!-- 버튼 -->
+    <dimen name="comm_btn_height">50sp</dimen>
+
+    <!-- 텍스트 사이즈 -->
+    <dimen name="comm_titleTextSize">16.5sp</dimen>
+	<!-- 서브타이틀 하이트 -->
+    <dimen name="comm_subTitle_height">45sp</dimen>
+
+    <!-- 완료버튼 최소사이즈 -->
+    <dimen name="comm_completebutton_min_height">90sp</dimen>
+
+        <!--comm calendar search area-->
+    <dimen name="comm_calendar_search_height">84.5sp</dimen>
+    <dimen name="comm_calendar_search_height2">42.25sp</dimen>
+     <dimen name="comm_search_choice_height">58.5sp</dimen>
+</resources>

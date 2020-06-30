@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+   
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textfirstlinebg" />
+        
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130firstbg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="청구 일자" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_partsDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="관리 번호"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_bldgNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="현장명"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_bldgNm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="관련 계약 번호"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_refContrNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="청구상태"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_repSt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="청구형태" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_partsCd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="요구일자"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_matDueDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+                
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="승인일자" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_apprDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+                
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="자재생산일" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_matDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+                
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+     		        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="자재승인일" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_pi_matApprDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textfirstlinebg" />
+       
+     <LinearLayout
+                  android:layout_width="match_parent"
+      			  android:layout_height="@dimen/comm_listHeader_height"
+       		      android:background="@color/comm_listtitlebg" >
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+            android:layout_gravity="center_vertical"
+            android:text="청구내용" />
+    </LinearLayout>
+  <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+    <ListView
+        android:id="@+id/lv_pi_partList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_dm05_r01p_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height"
+    android:background="@drawable/lv_bg250"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_dm05_r01p_adapter_deptNm2"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_dm05_r01p_adapter_deptcd2"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_dm05_r01p_adapter_workNm2"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+            <LinearLayout
+                android:id="@+id/ln_dm05_r01p_adapter_workTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_dm05_r01p_adapter_workTime_fr"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical|right" />
+                <TextView
+                    android:id="@+id/tv_dm05_r01p_adapter_workTime_interval"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/tv_dm05_r01p_adapter_workTime_to"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical|left" />
+                <TextView
+                    android:id="@+id/tv_dm05_r01p_adapter_workTime_sum"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/comm_default_topMargin"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/btn_dm05_r01p_adapter_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_delete" />
+    </LinearLayout>
+
+</LinearLayout>

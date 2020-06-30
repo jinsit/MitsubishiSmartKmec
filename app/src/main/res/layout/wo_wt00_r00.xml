@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     
+    android:weightSum="10" >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="9"
+         
+         >
+
+        <LinearLayout
+            android:id="@+id/ll_wo_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    
+ 
+    </FrameLayout>
+
+        <com.jinsit.kmec.widget.WorkObjectTabWidget
+        android:id="@+id/tab_workObject"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom|center" android:gravity="bottom"
+        android:layout_weight="1" 
+        android:orientation="vertical"
+        >
+    </com.jinsit.kmec.widget.WorkObjectTabWidget>
+
+</LinearLayout>
+
+
+  <ListView android:id="@+id/drawer_list"
+        android:layout_width="300sp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#ffffff"/>
+</android.support.v4.widget.DrawerLayout>
+
+
+  <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+				android:orientation="vertical">
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

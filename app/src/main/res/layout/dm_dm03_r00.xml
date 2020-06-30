@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/comm_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180firstbg">
+
+         <TextView
+            style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_weight="4"
+             android:gravity="center_vertical"
+            android:text="일자"/>
+
+          	<TextView
+                style="@style/inputdatetext"
+                android:id="@+id/et_dm_date"
+            	android:layout_width="0dp"
+                android:layout_height="wrap_content"
+            	android:layout_weight="7" 
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        
+         <TextView 
+              android:id="@+id/btn_dm_calendar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="4dp"
+              android:background="@drawable/btn_calendar"
+             android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg">
+
+        <TextView
+            style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_weight="4"
+            android:text="승인"
+            android:gravity ="center_vertical" />
+
+       <Spinner
+            style="@style/text"
+            android:id="@+id/sp_dm_attendCd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:drawSelectorOnTop="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        <TextView 
+             android:id="@+id/btn_dm_inquery"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+             android:layout_gravity="center"
+             android:layout_marginLeft="4dp"
+             android:background="@drawable/btn_inquery"/> 
+    </LinearLayout>
+    
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listHeader_height"
+        android:background="@color/comm_listtitlebg">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:text="근태" />
+
+        
+   </LinearLayout>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+      <ListView
+        android:id="@+id/lv_dm_approvalList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+       /> 
+       
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listHeader_height"
+        android:background="@color/comm_listtitlebg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+            <TextView
+                style="@style/listtitletext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="특별OT" />
+
+         
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+      <ListView
+        android:id="@+id/lv_dm_otList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+       /> 
+       
+    </LinearLayout>
+
+ 
+
+</LinearLayout>
+
+    
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

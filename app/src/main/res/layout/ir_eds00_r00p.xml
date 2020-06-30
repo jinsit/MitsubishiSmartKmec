@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_detailView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem140_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="유지관리 기술인력 교육수료현황"
+                        android:textColor="#1F50B5"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="법정교육 이수현황" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_listHeader_height"
+                    android:background="@color/comm_listtitlebg" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="자격증 번호" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="자격증 명" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="4"
+                            android:text="유효기간" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_lawEds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.22" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KMEC 교육수료현황" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_listHeader_height"
+                    android:background="@color/comm_listtitlebg" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="교육수료명" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:text="적용기종" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="교육이수일" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:text="수료점수" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_kmecEds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="해외 교육수료현황" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_listHeader_height"
+                    android:background="@color/comm_listtitlebg" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="교육수료명" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:text="적용기종" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="3"
+                            android:text="교육이수일" />
+
+                        <TextView
+                            style="@style/listtitletext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:text="수료점수" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_overseaEds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

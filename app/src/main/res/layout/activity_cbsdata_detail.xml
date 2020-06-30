@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent" android:background="#ffffff"
+        android:layout_height="fill_parent" android:gravity="center"
+        android:layout_gravity="center"  android:layout_marginLeft="@dimen/comm_popup_default_margin"
+    android:layout_marginRight="@dimen/comm_popup_default_margin"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_dialogSubject"
+            android:layout_width="match_parent"
+            android:layout_height="0dip" android:layout_weight="1"
+            android:gravity="center"
+            android:text="Large Text"
+             />
+<!-- 데이터 셋팅 레이아웃 -->
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_detailView"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:gravity="center"
+                    android:text="Large Text"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="빌딩번호:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_cbs_bldgNo"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="건물명"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                           android:id="@+id/tv_cbs_bldgNm"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>
+             
+		
+		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="호기정보"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                          android:id="@+id/tv_cbs_carNo"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>
+             		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="부서정보"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                            android:id="@+id/tv_cbs_csDeptNm" 
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="빌딩번호:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                         
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="빌딩번호:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_cbs_empNm1" 
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="빌딩번호:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                                 android:id="@+id/tv_cbs_empNm2"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="접수일시"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                          android:id="@+id/tv_cbs_recevTm"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="도착일시"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                          android:id="@+id/tv_cbs_arriveTm"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="완료일시"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                            android:id="@+id/tv_cbs_completeTm"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+		<LinearLayout
+                    android:layout_width="match_parent" android:weightSum="10"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="0dip" android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="예약일시"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                          android:id="@+id/tv_cbs_rescueTm"
+                         android:layout_width="0dip" android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>		
+                
+		
+		<LinearLayout
+                    android:layout_width="wrap_content" android:orientation="vertical"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="접수내용"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                          android:id="@+id/tv_cbs_recevDesc"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                </LinearLayout>
+		
+		
+		<LinearLayout
+		    	 	android:orientation="vertical"
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                     
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="처리결과"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                             android:id="@+id/tv_cbs_statusCd"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_cbs_cbsCd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                           
+                            android:text="Large Text"
+                             />
+
+                        <TextView
+                            android:id="@+id/tv_cbs_cbsCd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/tv_cbs_cbsCd3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    
+                    </LinearLayout>
+<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                     
+
+                        <TextView
+                            android:id="@+id/tv_cbs_faultCd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/tv_cbs_procCd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <TextView
+                            android:id="@+id/tv_cbs_dutyCd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_cbs_orderDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/btn_dialogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Button" />
+
+</LinearLayout>

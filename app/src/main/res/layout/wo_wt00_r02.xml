@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/comm_listHeader2_height"
+		android:background="@color/comm_listtitlebg">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+			android:weightSum="14"
+			android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+			<TextView
+				style="@style/listtitletext"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="6"
+				android:layout_gravity="center_vertical"
+				android:text="점검항목" />
+
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical"
+				>
+				<TextView
+					style="@style/listtitletext"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:gravity="center"
+					android:text="점검방법"/>
+
+				<TextView
+					style="@style/listtitletext"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:gravity="center"
+					android:text="주기"/>
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="3"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical"
+				>
+				<TextView
+					style="@style/listtitletext"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:gravity="center"
+					android:text="전회점검월"/>
+
+				<TextView
+					style="@style/listtitletext"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:gravity="center"
+					android:text="전회결과"/>
+
+			</LinearLayout>
+
+			<TextView
+				style="@style/listtitletext"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="3"
+				android:layout_gravity="center_vertical"
+				android:gravity="center"
+				android:text="상태" />
+
+		</LinearLayout>
+	</LinearLayout>
+    <ListView
+        android:id="@+id/lv_wo_checkList"		
+        android:layout_width="match_parent"  android:descendantFocusability="afterDescendants"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
+
+
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>
+
+

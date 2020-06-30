@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   	android:background="@color/comm_popup_bg">
+    <include layout="@layout/comm_dialog_title_bar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:orientation="vertical" >
+         <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textfirstlinebg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg" >
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="총금액(Total)" />
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv01_rj01_r01p_totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right" />
+            <TextView
+                style="@style/text"
+                android:id="@+id/nemo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+        
+         <TextView
+            style="@style/colortext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공사내역" />
+    </LinearLayout>
+    
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+    
+    <ListView
+        android:id="@+id/lv01_rj01_r01p_dataList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+    </ListView>
+    
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+    
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+<!--         <ImageView -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:background="@drawable/tv_textfirstlinebg" /> -->
+        
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+            
+        <TextView
+            style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="작업일자" />
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv01_js_workDt_v"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical|right"
+            android:text="Medium Text"
+            />
+    </LinearLayout>
+    
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+         <TextView
+            style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="근태구분" />
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv02_js_isAttended_v"
+              android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical|right"
+            />
+    </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+        <TextView
+             style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="전체작업시간"/>
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv03_js_totalWorkDt_v"
+              android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical|right"
+            />
+    </LinearLayout>
+        
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textlastlinebg" />
+ 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/lv01_js_workList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+            
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv01_js_tab1"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv02_js_tab2"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center"/>
+
+        </LinearLayout>
+
+</LinearLayout>

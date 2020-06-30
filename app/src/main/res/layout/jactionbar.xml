@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:weightSum="2">
+
+ 
+
+    <TextView
+        android:id="@+id/versionTextView"  
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|right" android:textColor="#ffffff"
+        android:text="test" >
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/sortTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|right" android:textColor="#ffffff"
+            android:text="test" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/sortCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="오름차순"
+            android:gravity="center|right"
+            android:textColor="#ffffff"
+            android:layout_gravity="right"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>

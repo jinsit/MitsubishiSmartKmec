@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "28.0.2"
+
+    defaultConfig {
+        applicationId "com.jinsit.kmec"
+        minSdkVersion 18
+        targetSdkVersion 21
+
+//        ndk {
+//            moduleName "mupdf"
+//            abiFilters 'x86', 'x86_64', 'armeabi-v7a',
+//                    'arm64-v8a'
+//        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+//    externalNativeBuild {
+//        ndkBuild {
+//            path 'src/main/jni/Android.mk'
+//        }
+//    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs', 'src/main/libs']
+//            jni.srcDirs = []
+//        }
+//    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:21.0.0'
+    implementation 'com.android.support:appcompat-v7:21.0.0'
+    implementation 'com.google.guava:guava:18.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.0.3'   //mupdf 대신 추가된 PDF viewer 20190108 yowonsm
+    implementation files('libs/nxpnfcliblite.jar')
+}

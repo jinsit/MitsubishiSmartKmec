@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+    
+   <TextView
+       style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code1" /> 
+   <EditText
+        android:id="@+id/et_fr_code1" 
+     	style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
+   <TextView
+       style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:text="Code2" />
+   <EditText
+        android:id="@+id/et_fr_code2"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
+   <TextView
+       style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:text="Code3" />
+   <EditText
+        android:id="@+id/et_fr_code3"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
+   <TextView
+       style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:text="Code4" />
+   <EditText
+        android:id="@+id/et_fr_code4"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
+
+      <TextView
+       style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:text="Code5" />
+   <EditText
+        android:id="@+id/et_fr_code5"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용을 입력하세요"/>
+   
+     <TextView
+            android:id="@+id/btn_fr_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_default_topMargin"
+            android:layout_gravity="center"
+            android:background="@drawable/bnt_pophalf_ok" />
+</LinearLayout>

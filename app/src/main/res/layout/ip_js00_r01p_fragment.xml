@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl01_js_contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv01_js_basicWorkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:gravity="center"   
+            android:text="기본작업시간"
+            android:textAppearance="?android:attr/textAppearanceLarge"          
+            />
+
+        <TextView
+            android:id="@+id/tv02_js_homeCallSer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:gravity="center"   
+            android:text="Home Call Ser."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+    
+<include layout="@layout/comm_dialog_title_bar" />
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem2_height" android:orientation="vertical"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin" >
+
+     <TextView
+            android:id="@+id/tv_cbs02HeaderBldgNo"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="left|center"
+            android:maxLines="2"
+            android:text="Medium Text"
+            android:textColor="@color/comm_boldFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize" />
+<TextView
+            android:id="@+id/tv_cbs02HeaderBldgNm" 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="Large Text"
+            android:textColor="@color/comm_boldFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize" />
+<TextView
+            android:id="@+id/tv_cbs02HeaderCarNo"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="Large Text"
+            android:textColor="@color/comm_boldFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize" />
+       
+    </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_cbsRFData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    
+</LinearLayout>

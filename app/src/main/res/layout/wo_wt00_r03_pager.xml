@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <LinearLayout
+       	 android:layout_width="match_parent" 
+          android:layout_height="match_parent" android:orientation="vertical">
+    <ExpandableListView
+        android:id="@+id/lv_wo_checkTableList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+       android:layout_height="@dimen/comm_listitem2_height"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_wt_ri_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="특기사항/부품교체내역"
+           />
+        
+         -->
+      <!--   <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comm_listitem4_height"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/colortext"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/comm_textitem133_height"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                            android:paddingRight="@dimen/comm_default_attendantsMargin"
+                            android:text="특기사항/부품교체내역" />
+
+                        <TextView
+                            android:id="@+id/tv_wt_ri_etc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                            android:background="@drawable/border"
+                            android:gravity="center_vertical"
+                            android:hint="특기사항을 입력하세요."
+                            android:maxLines="3"
+                            android:minHeight="32.5sp" />
+                    </LinearLayout> -->
+      
+  
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_popup_default_height"
+    android:background="@color/ir_nt_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+          
+                android:layout_marginTop="@dimen/comm_textitem_48Size"  android:background="@color/comm_popup_bg"
+                android:gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_noticeImg1" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_width="@dimen/comm_img_width"
+                    android:layout_height="@dimen/comm_img_width"
+                    android:background="@drawable/btn_nopicture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_noticeImg2"
+                    android:layout_width="@dimen/comm_img_width"
+                    android:layout_height="@dimen/comm_img_width"   android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:background="@drawable/btn_nopicture" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" 
+            
+                android:layout_height="@dimen/comm_listitem1_height"
+                android:layout_marginTop="@dimen/comm_textitem_48Size"
+                android:background="@drawable/tv_text180bg" >
+
+                <TextView
+                    android:layout_width="0dp"   android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="제목"
+                    android:textColor="@color/comm_anotherFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+                <TextView
+                    android:id="@+id/tv_noticeSubject"
+                    android:layout_width="0dp" android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"       android:background="@drawable/tv_text180bg"
+                android:layout_height="@dimen/comm_listitem1_height" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="공지일자"
+                    android:textColor="@color/comm_anotherFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+                <TextView
+                    android:id="@+id/tv_noticeTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10" android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"       android:background="@drawable/tv_text180bg"
+                android:layout_height="@dimen/comm_listitem1_height" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:text="발신자 명"
+                    android:textColor="@color/comm_anotherFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+                <TextView
+                    android:id="@+id/tv_noticeTo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"       android:background="@drawable/tv_text180bg"
+                android:layout_height="@dimen/comm_listitem1_height" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:text="수신자 명"
+                    android:textColor="@color/comm_anotherFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+                <TextView
+                    android:id="@+id/tv_noticeFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout 
+                android:layout_width="match_parent"       
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_noticeContent" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_width="match_parent" android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+   
+        
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textfirstlinebg" />
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/comm_small_attendantsMargin"
+            android:paddingRight="@dimen/comm_small_attendantsMargin"
+            android:background="@drawable/tv_text180firstbg"  
+            android:gravity="center" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:gravity="center" 
+                android:text="오늘"/>
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" 
+                android:text="내일"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_small_attendantsMargin"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_cm_firstDate"
+                style="@style/btntext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:background="@drawable/btn"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_cm_secondDate"
+                style="@style/btntext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TimePicker
+            android:id="@+id/tp_timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/comm_default_topMargin" >
+        </TimePicker>
+
+</LinearLayout>

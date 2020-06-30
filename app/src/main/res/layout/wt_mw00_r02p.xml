@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_popup_default_height"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+    
+<include layout="@layout/comm_dialog_title_bar" />
+    
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    
+        android:layout_weight="1"
+        android:orientation="vertical" >
+<LinearLayout
+          
+                android:layout_width="match_parent" android:background="#fbfbfb"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                   android:layout_height="@dimen/comm_textitem133_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/tv_mw_r02pRowid"
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="3"
+                        android:text="검사일" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r02pCheckDay1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:text="Large Text" />
+                </LinearLayout>
+ <LinearLayout
+                    android:layout_width="match_parent"
+                  android:layout_height="@dimen/comm_textitem133_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="3"
+                        android:text="검사기관" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r02pInspecterInfo1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:text="Large Text" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                  android:layout_height="@dimen/comm_textitem133_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="3"
+                        android:text="합격여부" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r02pSuccessInfo1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:text="Large Text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_listitem4_height"
+                  
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="match_parent"
+                       android:layout_height="@dimen/comm_textitem133_height"
+                        android:gravity="center_vertical"  
+                        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"
+                        android:text="부적합내용" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r02pFailInfo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        
+                         android:gravity="center_vertical"   
+                         android:minHeight="32.5sp"
+                        
+                      />
+                </LinearLayout>
+                
+                  <ImageView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lv_bglastline" />
+    
+            </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

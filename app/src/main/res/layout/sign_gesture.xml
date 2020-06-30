@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1114"
+    android:orientation="vertical"
+   
+    >
+	
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="0dip"
+    android:layout_weight="83"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"  android:layout_weight="864" android:weightSum="720" android:gravity="center" 
+      android:layout_height="0dip" >
+      <android.gesture.GestureOverlayView
+        android:id="@+id/gestures_overlay"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="622" 
+		android:gestureColor="#000000"
+        android:gestureStrokeType="multiple" />
+  </LinearLayout>
+      <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="0dip"
+    android:layout_weight="47"
+      />
+    
+
+<LinearLayout
+        android:layout_width="match_parent" android:layout_weight="120"
+        android:layout_height="0dip"
+        android:background="#EAEEEF"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="#EAEEEF"
+            android:layout_marginBottom="5dp" android:gravity="center"
+            android:layout_marginTop="5dp" android:weightSum="720"
+            android:orientation="horizontal" >
+
+         
+
+           
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent" android:layout_weight="204"
+                  
+                    android:gravity="center"
+                     android:onClick="onBack"
+                    android:text="취소"
+                  
+                    android:textSize="13sp" />
+            
+
+                <TextView
+                  
+                    android:layout_width="0dip" android:layout_weight="16"
+                    android:layout_height="wrap_content"
+                    />
+             
+
+                <Button
+                    android:id="@+id/Btn_Reinput"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="204"
+                    android:gravity="center"
+                 
+                    android:text="재입력"
+                 />
+           
+           
+                <TextView
+                 
+                    android:layout_width="0dip" android:layout_weight="16"
+                    android:layout_height="wrap_content"
+                     />
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                 android:layout_weight="204"
+                    android:text="확인" android:onClick="saveGesture" android:enabled="false"
+                    android:gravity="center" 
+                    />
+           
+        </TableRow>
+    </LinearLayout>
+
+
+    
+</LinearLayout>

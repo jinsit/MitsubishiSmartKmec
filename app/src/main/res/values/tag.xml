@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag_ir_pi06_image_yn" />
+    <item type="id" name="tag_ir_pi06_image_no" />
+    <item type="id" name="tag_ip_is00_job_no" />
+    <item type="id" name="tag_ip_is00_work_dt" />
+    <item type="id" name="tag_ip_is00_bldg_nm" />
+    <item type="id" name="tag_ip_is00_user_id" />
+</resources>

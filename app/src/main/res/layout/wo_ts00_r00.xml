@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <!-- 데이터 셋팅 레이아웃 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+     	 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_subTitle_height"
+                android:background="@color/comm_subTitleBg">
+
+                <TextView
+                    android:id="@+id/tv_fr_date"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="1"
+                    style="@style/subtitletext"/>
+
+                <TextView
+                    android:id="@+id/tv_fr_workNm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                 	style="@style/subtitletext" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:orientation="vertical" >
+
+           
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        android:id="@+id/tv_fr_bldgInfo"
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        android:id="@+id/tv_fr_addr"
+                        style="@style/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        android:id="@+id/tv_fr_csDeptNm"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="주점검자" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_empNm1" 
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_empHp1" android:autoLink="phone"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="부점검자" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_empNm2"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_empHp2" android:autoLink="phone"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="신고자" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_notifyNm"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="접수내용" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_recevDesc"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="특기사항" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_specialDesc"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        android:id="@+id/tv_fr_st"
+                        style="@style/text"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tv_fr_csfr"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_fr_adminInfo"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mlistmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="관리자 정보" />
+
+            <TextView
+                android:id="@+id/btn_fr_reserverTime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mlistmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="@string/btnstr_reserverTime" />
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+            <TextView
+                android:id="@+id/tv_fr_travelTime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_traveltime"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+
+            <TextView
+                android:id="@+id/tv_fr_arrivalTime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_arrivaltime"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+
+            <TextView
+                android:id="@+id/tv_fr_repaireCompletionTime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_repairecompletion"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+
+            <TextView
+                android:id="@+id/tv_fr_completionTime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_completiontime"
+                android:gravity="center_vertical|right"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+
+            <TextView
+                android:id="@+id/btn_fr_troublePicture"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mlistmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="고장처리 전/후 사진" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" >
+
+                <TextView
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="대응협의" />
+
+                <CheckBox
+                    android:id="@+id/cb_fr_respond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" >
+
+                <TextView
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="승객갇힘여부" />
+
+                <CheckBox
+                    android:id="@+id/cb_fr_confined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fr_rescuetime"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_inputmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="승객 구출 시간" />
+
+            <TextView
+                android:id="@+id/btn_fr_aSProcCode"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/comm_default_topMargin"
+                android:background="@drawable/btn_mlistmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="A/S 처리코드" />
+
+            <LinearLayout
+                android:id="@+id/lin_aSProcCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                android:paddingRight="@dimen/comm_default_attendantsMargin"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="상태코드" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_aSProcCode"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="부위코드(대)" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_CbsNm1"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="부위코드(중)" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_CbsNm2"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="부위코드(소)" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_CbsNm3"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="책임코드" />
+
+                    <TextView
+                        android:id="@+id/tv_fr_falutNm"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="처리코드" />
+                    <TextView
+                        android:id="@+id/tv_fr_procNm"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="책임코드" />
+                    <TextView
+                        android:id="@+id/tv_fr_dutyNm"
+                        style="@style/text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+            <TextView
+                        style="@style/colortext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+               		    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                		android:layout_marginTop="@dimen/comm_default_topMargin"
+                        android:text="상세내용" />
+            <EditText
+                android:id="@+id/et_fr_orderDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               		    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+                
+            <LinearLayout
+                 android:id="@+id/lin_fr_cpErrorCode"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/btn_mlistmenu">
+                <TextView 
+                     style="@style/mosttext"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                     android:gravity="center_vertical"
+                     android:text="CP Error 코드" />
+                  <TextView 
+                     style="@style/text"
+                     android:id="@+id/tv_fr_cpErrorCode"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_fr_aSProcReport"
+                style="@style/btn_mlistmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_mlistmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"
+                android:text="A/S 처리 보고서" />
+
+            <TextView
+                android:id="@+id/btn_completework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                style="@style/btntext"
+                android:text="작업완료 등록"
+                android:minHeight="@dimen/comm_completebutton_min_height"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+    
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

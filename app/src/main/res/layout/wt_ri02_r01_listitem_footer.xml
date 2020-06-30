@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/colortext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_textitem133_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin"
+            android:text="특기사항/부품교체내역" />
+
+        
+            <ListView
+                    android:id="@+id/lv_wt_ri_rmk"  android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+         android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+       <!--  <TextView
+            android:id="@+id/tv_wt_ri_etc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:hint="특기사항을 입력하세요."
+            android:maxLines="3"
+            android:minHeight="32.5sp" />
+ -->
+        <TextView
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text" android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   android:id="@+id/ll_wt_ri_comment"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/colortext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_textitem133_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin"
+            android:text="점검자 의견" />
+
+        <TextView
+            android:id="@+id/tv_wt_ri_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:hint="점검자 의견을 입력하세요."
+            android:maxLines="3"
+            android:minHeight="32.5sp" />
+
+        <TextView
+      
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text" android:visibility="invisible"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+</LinearLayout>

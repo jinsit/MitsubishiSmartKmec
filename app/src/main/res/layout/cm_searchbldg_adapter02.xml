@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem4_height"
+    android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180bg"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="관리자" />
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_clientDept"
+                    style="@style/marginaltext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_clientTel"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical" 
+                    android:autoLink="phone"
+                   android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180bg" 
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="" 
+                android:paddingLeft="@dimen/comm_default_attendantsMargin"/>
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_clientNm"
+                    style="@style/marginaltext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_clientHp"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:autoLink="phone"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                   android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180bg"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="주담당" 
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"/>
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_empNm1"
+                    style="@style/marginaltext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_emp1Hp"
+                    style="@style/colortext"
+                    android:layout_width="0dp" 
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical" 
+                    android:paddingRight="@dimen/comm_default_attendantsMargin"
+                    android:autoLink="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180bg" 
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="부담당" 
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"/>
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_empNm2"
+                    style="@style/marginaltext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_cm_adapter_emp2Hp"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:autoLink="phone"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical" 
+                    android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+        </LinearLayout>

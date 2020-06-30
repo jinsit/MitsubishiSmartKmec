@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem2_height"
+    android:minHeight="@dimen/comm_listitem1_height"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+    <LinearLayout
+        android:id="@+id/llCheckParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/comm_listitem1_height"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tvChkItemNm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:text="CHKItemNm" />
+
+                <TextView
+                    android:id="@+id/tvPreCheckResult"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    android:text="이전점검결과"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+                <TextView
+                    android:id="@+id/tvSelCheckResult"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="점검결과"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnResultChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상태변경"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:minHeight="@dimen/comm_textitem133_height"
+        android:id="@+id/ll_remark"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="비고 : "
+            android:textColor="@color/comm_boldFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize"
+            />
+
+        <TextView
+            android:id="@+id/tvRemark"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:hint="비고를 입력하려면 클릭 하세요."
+            android:textColor="@color/comm_anotherFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize"
+            />
+    </LinearLayout>
+
+</LinearLayout>

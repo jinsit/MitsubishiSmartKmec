@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180firstbg" >
+
+        <TextView
+            android:id="@+id/tv_pi_bldgNm"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/search_building" />
+
+        <TextView
+            android:id="@+id/btn_pi_bldgNm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+            android:background="@drawable/btn_inquerybldg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_inquery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/comm_dialog_inquery_startend_date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/comm_textitem133_height" >
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_pi_buildingNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/comm_textitem133_height" >
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_pi_buildingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/comm_textitem133_height">
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_pi_departmentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+        </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/comm_textitem133_height">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="조회기간" 
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"/>
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_pi_inqueryDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_pi_partsDeliveryCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
+
+
+
+    
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

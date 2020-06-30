@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem2_height"
+    android:background="@drawable/lv_bg250arrow"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1" >
+			<TextView
+			    android:id="@+id/tv01_cr02_ngNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="ngNo"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+            <TextView
+                android:id="@+id/tv02_cr02_empNm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="empNm"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_default_fontSize" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1" >
+       		<TextView
+       		    android:id="@+id/tv03_cr02_prjNm_prjNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="prjNm_prjNo"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+    </LinearLayout>
+    
+</LinearLayout>

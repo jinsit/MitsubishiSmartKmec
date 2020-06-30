@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+    
+<include layout="@layout/comm_dialog_title_bar" />
+    
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:id="@+id/ll_detailView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip" android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:gravity="center"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="빌딩번호"
+                     style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_bldgNo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="건물명"
+                      style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_bldgNm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_horizontal|center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="호기정보"
+                     style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_carNo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="접수일시"
+                 style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_recevTm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="도착일시"
+                    style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_arriveTm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="완료일시"
+            style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_completeTm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="예약일시"
+                      style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_reservTm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="대응협의"
+                    style="@style/colortext"  />
+
+                <TextView
+                    android:id="@+id/tv_cbs_contactCd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+            
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="접수내용"
+                      style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_recevDesc"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+            
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="처리결과"
+                   style="@style/colortext"/>
+
+                <TextView
+                    android:id="@+id/tv_cbs_statusCd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+                	
+            </LinearLayout>
+            
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="고장부위(대)"
+                    style="@style/colortext"/>
+
+                <TextView
+                    android:id="@+id/tv_cbs_cbsCd1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="고장부위(중)"
+                  style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_cbsCd2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+                	
+            </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="고장부위(소)"
+                  style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_cbsCd3"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+  </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="귀책부서"
+                  style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_dutyCd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+  </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="처리코드"
+                  style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_procCd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+  </LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comm_textitem140_height"
+                android:gravity="center_vertical"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="불량코드"
+                  style="@style/colortext" />
+
+                <TextView
+                    android:id="@+id/tv_cbs_faultCd"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+  </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

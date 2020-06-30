@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+            <include layout="@layout/comm_dialog_menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_adminDept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_listitem1_height"
+           android:background="@drawable/tv_text180firstbg"
+            android:gravity="start|center"
+           >
+
+          
+
+            <TextView
+                android:id="@+id/tv_cbsDept"
+                  style="@style/text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_listitem_margin"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="부서를 조회해 주세요." />
+            
+               <ImageView
+                android:id="@+id/iv_cbsDept" 
+                android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+                
+                android:layout_height="wrap_content"   android:layout_marginRight="@dimen/comm_listitem_margin"
+                android:background="@drawable/btn_inquerydept"
+                />
+            
+
+            <ImageView
+                android:id="@+id/iv_asInquery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"   android:layout_marginRight="@dimen/comm_listitem_margin"
+                android:background="@drawable/btn_inquery"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_lastline" />
+
+        <LinearLayout
+            android:id="@+id/ll_failure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_listitem1_height"
+           android:background="@drawable/tv_text180bg"
+            android:gravity="center"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_listitem_margin"
+                android:layout_weight="1"
+                android:text="고장"
+                android:textColor="@color/comm_defaultFont_color"
+                android:textSize="@dimen/comm_textitem_66Size" />
+
+
+            <EditText
+                android:id="@+id/et_cbsRepeatFailure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:text="3"
+                android:gravity="end" 
+                android:inputType="number"
+                android:maxEms="4"
+                android:maxLength="4" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comm_listitem_margin"
+               
+                android:gravity="end"
+                android:text="회 이상" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_searchDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/comm_dialog_inquery_startend_date" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_cbsData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

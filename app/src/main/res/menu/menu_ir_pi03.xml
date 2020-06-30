@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item 
+    android:id="@+id/menu_pi_itemNo" android:title="아이템  No"/>
+<item
+    android:id="@+id/menu_pi_itemNm" android:title="아이템 이름"/>
+<item
+    android:id="@+id/menu_pi_size" android:title="규격"/>
+<item android:id="@+id/menu_pi_logis" android:title="창고별" />
+</menu>

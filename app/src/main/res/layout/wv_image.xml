@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wv_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="image 불러오기" />
+
+    <EditText
+        android:id="@+id/wv_et01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="img명을 넣어주세요 (확장자포함)"
+        android:text="t.jpg"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+    <Button
+        android:id="@+id/wv_btn01_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get(F)" />
+        
+    <Button
+        android:id="@+id/wv_btn01_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set(F)" />
+        
+    <Button
+        android:id="@+id/wv_btn02_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get(DD)" />
+
+    <Button
+        android:id="@+id/wv_btn02_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set(D)" />
+        
+    </LinearLayout>
+    
+        <ImageView
+        android:id="@+id/wv_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/border" />
+
+</LinearLayout>

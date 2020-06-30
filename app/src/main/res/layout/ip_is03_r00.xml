@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+       			 android:background="@drawable/tv_text180firstbg"
+                android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                android:paddingRight="@dimen/comm_default_attendantsMargin" >
+        <TextView
+            style="@style/colortext"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점검계획 연월"
+            />
+
+        <TextView
+              style="@style/inputdatetext"
+            android:id="@+id/tv01_is03_YM_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        </TextView>
+          <TextView
+                android:id="@+id/btn_is_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                android:background="@drawable/btn_calendar" />
+        <TextView
+	        android:id="@+id/btn02_is03_search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+	        android:background="@drawable/btn_inquery"/>
+        
+    </LinearLayout>
+    
+     
+        
+        
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+ 
+    <TableLayout
+		android:stretchColumns="*"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TableRow>
+			<TextView
+				style="@style/yoil_sun"
+				android:text="일"/>
+			<TextView
+				style="@style/yoil"
+				android:text="월"/>
+			<TextView
+				style="@style/yoil"
+				android:text="화"/>
+			<TextView
+				style="@style/yoil"
+				android:text="수"/>
+			<TextView
+				style="@style/yoil"
+				android:text="목"/>
+			<TextView
+				style="@style/yoil"
+				android:text="금"/>
+			<TextView
+				style="@style/yoil_sat"
+				android:text="토"/>
+		</TableRow>
+	</TableLayout>
+	<GridView
+		android:id="@+id/gl01_is03_calender"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:numColumns="7"
+		android:stretchMode="columnWidth"
+		android:listSelector="@drawable/gridview_selector"/>
+        
+        
+        
+        
+    </LinearLayout>
+        
+</LinearLayout>
+
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

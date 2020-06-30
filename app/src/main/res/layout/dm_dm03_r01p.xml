@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+ 
+    <include layout="@layout/comm_dialog_title_bar" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textfirstlinebg" />
+            
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="성명" />
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_empNm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="기본" />
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_basicOt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical|right" />
+              <TextView
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:text="분"/>
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="당직" />
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_onDutyOt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical|right" />
+              <TextView
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:text="분"/>
+        </LinearLayout>
+        
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="특별" />
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_specialOt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical|right"/>
+              <TextView
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:text="분" />
+        </LinearLayout>
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="합계" />
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_totalOt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center_vertical|right"/>
+           <TextView
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="분"
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+        </LinearLayout>
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg" >
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+       	    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:text="상태"/>
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_dm_approvalYnNm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical" 
+            android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+        </LinearLayout>
+        
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textlastlinebg" />
+            
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/btn_dm_approve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn"
+            android:layout_marginTop="@dimen/comm_default_topMargin"
+            android:text="승인" />
+        
+        
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/btn_dm_cancelApproval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/comm_default_topMargin"
+            android:text="승인취소"
+            android:background="@drawable/btn"/>
+    
+    </LinearLayout>
+
+   
+</LinearLayout>

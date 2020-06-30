@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/comm_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180firstbg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="종류" />
+
+                <Spinner
+                    android:id="@+id/sp_dm_attendCd"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text180bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="일자" />
+
+                <TextView
+                    android:id="@+id/et_dm_date"
+                    style="@style/inputdatetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="7"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_dm_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:background="@drawable/btn_calendar" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textlastlinebg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="비고" />
+
+                <EditText
+                    android:id="@+id/et_dm_rmk"
+                    style="@style/text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:minLines="5" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textlastlinebg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_dm_save"
+            style="@style/mosttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:text="작성완료" />
+    </LinearLayout>
+
+</LinearLayout>

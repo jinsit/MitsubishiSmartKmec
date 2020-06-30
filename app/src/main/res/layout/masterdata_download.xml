@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_mlistmenu"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+        android:paddingRight="@dimen/comm_small_attendantsMargin"
+        android:text="점검 항목 다운로드" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_mlistmenu"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+        android:paddingRight="@dimen/comm_small_attendantsMargin"
+        android:text="점검 항목 업로드" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+
+</LinearLayout>

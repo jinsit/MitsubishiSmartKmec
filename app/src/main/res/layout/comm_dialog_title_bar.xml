@@ -1,0 +1,22 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_popup_title_bg" >
+
+    <TextView
+         android:id="@+id/tv01_popTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:text="title"
+        android:textSize="16.5sp" />
+
+    <TextView
+        android:id="@+id/btn_popClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_pop_close"/>
+</RelativeLayout>

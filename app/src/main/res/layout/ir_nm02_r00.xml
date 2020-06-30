@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180firstbg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="NFC NO." />
+
+        <TextView
+     	    style="@style/text"
+            android:id="@+id/tv_nm_nfcNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:text="" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_inquerybldg"
+            android:layout_gravity = "center_vertical"
+            android:visibility="invisible"/>
+            
+    </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="건물명"/>
+
+        <TextView
+     	    style="@style/text"
+            android:id="@+id/tv_nm_nfcBldg"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/btn_nm_nfcBldg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_inquerybldg"
+            android:layout_gravity = "center_vertical"/>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="호기" />
+
+        <TextView
+     	    style="@style/text"
+            android:id="@+id/tv_nm_nfcCarNo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/btn_nm_nfcCarNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_inquerycarno"
+            android:layout_gravity = "center_vertical"/>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="위치" />
+
+        <TextView
+     	    style="@style/text"
+            android:id="@+id/tv_nm_nfcPosition"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_vertical" />
+        <TextView
+            android:id="@+id/btn_nm_nfcPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_inqueryplc"
+            android:layout_gravity = "center_vertical"/>
+        
+        
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="현장 동호기" />
+
+        <EditText
+            android:id="@+id/et_nm_nfcDonCarNo" style="@style/text"
+            android:layout_width="0dp" android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" android:layout_gravity="bottom"
+            android:ems="10" >
+        </EditText>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="관리원 승강기 번호" />
+
+            <EditText
+            android:id="@+id/et_nm_nfckeSafeNo" style="@style/text"
+            android:layout_width="0dp" android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" android:layout_gravity="bottom"
+            android:ems="10" >
+        </EditText>
+        
+        
+        
+    </LinearLayout>
+    
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180bg"
+        android:paddingLeft="@dimen/comm_default_attendantsMargin"
+        android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+     	    style="@style/colortext"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="대체호기 여부" />
+        <Spinner
+                    android:id="@+id/sp_nm_nfcSubstitute"
+                    style="@style/text" 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical" />
+        
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textlastlinebg" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/comm_default_topHalfMargin"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:text="등록" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+   
+	    <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

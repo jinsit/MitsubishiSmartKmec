@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@color/comm_bg"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <!-- 데이터 셋팅 레이아웃 -->
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/ll_detailView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"    
+            android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/comm_subTitle_height"
+                        android:background="@color/comm_subTitleBg"
+                        android:weightSum="10" >
+
+                        <TextView
+                            android:id="@+id/tv_mw_r01date"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                            android:layout_weight="5"
+                            android:text="일자"
+                            android:textColor="@color/comm_popup_bg"
+                            android:textSize="@dimen/comm_textitem_66Size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_mw_r01workNm"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                            android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                            android:layout_weight="5"
+                            android:gravity="right"
+                            android:text="정기점검"
+                            android:textColor="@color/comm_popup_bg"
+                            android:textSize="@dimen/comm_textitem_66Size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/comm_listitem1_height"
+                        android:weightSum="10" >
+
+                        <TextView
+                            android:id="@+id/tv_mw_r01st"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="계획"
+                            android:textSize="@dimen/comm_textitem_56Size" />
+
+                        <TextView
+                            android:id="@+id/tv_mw_r01cs_fr"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:textSize="@dimen/comm_textitem_56Size" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_textlastlinebg" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r01startTm"
+                        style="@style/btn_mlistmenutext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_starttime"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                        android:paddingRight="@dimen/comm_small_attendantsMargin"
+                        android:text="시작시간" />
+
+                    <TextView
+                        android:id="@+id/tv_mw_r01completeTm"
+                        style="@style/btn_mlistmenutext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_completiontime"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                        android:paddingRight="@dimen/comm_small_attendantsMargin"
+                        android:text="완료시간" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_mw_r01jobComplete"
+                        android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  android:text="작업완료 등록" 
+                        android:background="@drawable/btn"
+                    android:gravity="center" android:layout_gravity="bottom"
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp" >
+
+        <!-- 545sp -->
+
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- 비밀번호변경 -->
+
+                <TextView
+                    android:id="@+id/tv01_changePwd"
+                    style="@style/btn_listmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_listmenu01"
+                    android:gravity="center"
+                    android:text="비밀번호변경" />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline"/>
+
+                <!-- 소프트웨어버전 -->
+
+                <TextView
+                    android:id="@+id/tv02_verOfSoftware"
+                    style="@style/btn_listmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_listmenu02"
+                    android:gravity="center"
+                    android:text="소프트웨어 Ver." />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline"/>
+
+                <!-- temporary -->
+
+                <TextView
+                    style="@style/btn_listmenutext"
+                    android:id="@+id/tv05_cs_dataDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_listmenu03"
+                    android:gravity="center"
+                    android:text="데이터 업로드/다운로드" />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline"/>
+        
+        <TextView
+                    style="@style/btn_listmenutext"
+                    android:id="@+id/tv06_cs_empSave"
+                    android:layout_width="match_parent" android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_listmenu04"
+                    android:gravity="center"
+                    android:text="작업자 안전관리" />
+<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline"/>
+        
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp" >
+
+        <!-- 545sp -->
+
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+</FrameLayout>

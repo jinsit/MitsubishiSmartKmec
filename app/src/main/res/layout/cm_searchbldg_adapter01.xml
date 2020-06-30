@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:minHeight="@dimen/comm_listitem3_height"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_cm_adapter_csDeptNm"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_cm_adapter_bldg_nm"
+            style="@style/mosttext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_cm_adapter_addr"
+            style="@style/marginaltext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comm_listitem3_height" 
+        android:layout_marginRight="@dimen/comm_listitem_margin">
+
+        <CheckBox
+            android:id="@+id/cb_cm_adapter_bldg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </CheckBox>
+    </LinearLayout>
+
+</LinearLayout>

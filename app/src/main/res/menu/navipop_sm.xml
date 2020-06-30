@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item 
+    android:id="@+id/menu_sm_CR" android:title="Claim등록/조회"/>
+<item
+    android:id="@+id/menu_sm_GM" android:title="그룹메시지"/>
+<item
+    android:id="@+id/menu_sm_CS" android:title="환경설정"/>
+<item
+    android:id="@+id/menu_sm_LO" android:title="로그아웃"/>
+
+</menu>

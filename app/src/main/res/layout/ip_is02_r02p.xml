@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg" 
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textfirstlinebg" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+      
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="점검계획일자" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv01_is02_p02_workDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|end"
+                    android:text="value01"
+                    />
+            </LinearLayout>
+
+               <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="점검대수" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv02_is02_p02_yCnt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|end"
+                    
+                    android:text="value01"
+                    />
+            </LinearLayout>
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv03_is02_p02_bldgNo_Nm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="value03" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130firstbg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin" >
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv04_is02_p02_carNo_CTN_ITBN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="value04"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+     
+
+    </ScrollView>
+   <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textlastlinebg" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item 
+    android:id="@+id/menu_ci_all" android:title="전체조회"/>
+<item
+    android:id="@+id/menu_ci_inqueryelev" android:title="호기별조회"/>
+
+</menu>

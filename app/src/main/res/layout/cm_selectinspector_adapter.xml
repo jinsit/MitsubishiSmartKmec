@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem2_height"
+        android:background="@drawable/lv_bg250arrow"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_weight="1"
+           android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:layout_marginRight="@dimen/comm_listitem_margin" >
+
+            <TextView
+                android:id="@+id/tv_insp_deptNm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="Medium Text"
+                android:textSize="@dimen/comm_listitem_default_fontSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="1" android:layout_marginRight="@dimen/comm_listitem_margin"
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/tv_insp_empNm"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:text="Large Text"
+                android:textSize="@dimen/comm_listitem_default_fontSize" />
+
+            <TextView
+                android:id="@+id/tv_insp_phone1"
+                android:layout_width="wrap_content" android:focusable="false"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:maxLines="2"
+                android:text="Medium Text"
+                 style="@style/colortext"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

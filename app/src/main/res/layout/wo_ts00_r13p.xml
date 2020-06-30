@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+        android:text="고객불편/개선의뢰 사항입력" />
+
+    <EditText
+        android:id="@+id/et_fr_rmk"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+        android:hint="내용을 입력하세요" />
+
+    <TextView
+        style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+        android:text="고객성함" />
+
+    <EditText
+        android:id="@+id/et_fr_custNm"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+        android:hint="내용을 입력하세요" />
+
+    <TextView
+        style="@style/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+        android:text="고객 Email주소" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <EditText
+            android:id="@+id/et_fr_custEmail1"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="내용을 입력하세요"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/btn_fr_custEmail1"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:background="@drawable/btn_emailaddress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+        <EditText
+            android:id="@+id/et_fr_custEmail2"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" android:inputType="textEmailAddress"
+            android:hint="내용을 입력하세요" />
+        <TextView 
+            android:id="@+id/btn_fr_custEmail2"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:background="@drawable/btn_emailaddress"/>
+    </LinearLayout>
+   </LinearLayout>
+    <TextView
+        style="@style/mosttext"
+        android:id="@+id/btn_fr_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        
+        android:text="확인"
+        android:background="@drawable/btn" />
+
+</LinearLayout>

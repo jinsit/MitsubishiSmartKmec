@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem4_height"
+    android:background="@drawable/lv_bg350"
+    android:orientation="vertical" >
+
+    <!-- 호기 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1"
+        android:gravity="center" >
+        <TextView
+            style ="@style/text"
+            android:id="@+id/tv01_rj01_r01p_carNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+        	android:layout_weight="2"
+            android:gravity="left"
+            android:text="Medium Text" />
+    </LinearLayout>
+
+    <!-- ItemNo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1"
+        android:gravity="center" >
+      <TextView
+            style ="@style/text"
+            android:id="@+id/tv02_rj01_r01p_itemNo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Medium Text"/>
+    </LinearLayout>
+    
+    <!-- ItemNm -->
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1"
+        android:gravity="center" >
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv03_rj01_r01p_itemNm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+        	android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Medium Text" 
+            
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    
+	<!-- priceInfo -->
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1"
+        android:gravity="center" >
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv04_rj01_r01p_upUnitAmt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+        	android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Medium Text" />
+    </LinearLayout>
+    
+</LinearLayout>

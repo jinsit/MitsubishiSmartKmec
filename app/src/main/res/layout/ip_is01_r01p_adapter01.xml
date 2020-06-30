@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+	android:layout_height="@dimen/comm_listitem5_height"
+	android:background="@drawable/lv_bg350"
+    android:orientation="vertical" >
+
+    
+    <!-- 호기번호 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight = "1"
+        android:paddingLeft = "@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+        <TextView
+            style = "@style/colortext"
+            android:id="@+id/tv01_is_p01_carNo_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="호기번호"
+			android:gravity="center_vertical"
+			android:layout_weight="4"
+            />
+        <TextView
+            style = "@style/text"
+            android:id="@+id/tv01_is_p01_carNo_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Medium Text"
+            android:gravity="right|center"
+            android:layout_weight="5" 
+            />
+    </LinearLayout>
+
+    
+    <!-- 점검사항 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight = "1"
+        android:paddingLeft = "@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+        <TextView
+            style = "@style/colortext"
+            android:id="@+id/tv02_is_p01_jobStNm_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="점검사항"
+
+			android:gravity="center_vertical"
+			android:layout_weight="4"
+            />
+        <TextView
+            style = "@style/text"
+            android:id="@+id/tv02_is_p01_jobStNm_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Medium Text"
+            
+            android:gravity="right|center"
+            android:layout_weight="5" 
+            />
+    </LinearLayout>
+    
+    
+    <!-- 점검계획일 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight = "1"
+        android:paddingLeft = "@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+        <TextView
+            style = "@style/colortext"
+            android:id="@+id/tv03_is_p01_planWorkDt_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="점검계획일"
+
+			android:gravity="center_vertical"
+			android:layout_weight="4"
+            />
+        <TextView
+            style = "@style/text"
+            android:id="@+id/tv03_is_p01_planWorkDt_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Medium Text"
+            
+            android:gravity="right|center"
+            android:layout_weight="5" 
+            />
+    </LinearLayout>
+    
+    
+    <!-- 점검완료일 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight = "1"
+        android:paddingLeft = "@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+        <TextView
+            style = "@style/colortext"
+            android:id="@+id/tv04_is_p01_workDt_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="점검완료일"
+
+			android:gravity="center_vertical"
+			android:layout_weight="4"
+            />
+        <TextView
+            style = "@style/text"
+            android:id="@+id/tv04_is_p01_workDt_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Medium Text"
+            
+            android:gravity="right|center"
+            android:layout_weight="5" 
+            />
+    </LinearLayout>
+    
+    
+    <!-- 점검자 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight = "1"
+        android:paddingLeft = "@dimen/comm_listitem_margin"
+        android:paddingRight="@dimen/comm_listitem_margin">
+        <TextView
+            style = "@style/colortext"
+            android:id="@+id/tv05_is_p01_empNm_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="점검자"
+
+			android:gravity="center_vertical"
+			android:layout_weight="4"
+            />
+        <TextView
+            style = "@style/text"
+            android:id="@+id/tv05_is_p01_empNm_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Medium Text"
+            
+            android:gravity="right|center"
+            android:layout_weight="5" 
+            />
+    </LinearLayout>
+    
+    
+</LinearLayout>

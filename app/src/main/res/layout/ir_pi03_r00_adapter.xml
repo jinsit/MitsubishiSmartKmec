@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height"
+    android:background="@drawable/lv_bg250arrow"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1" >
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_pi_adapter_itemNm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="8"
+            android:text="Medium Text"/>
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_pi_adapter_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:text=" 0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1" >
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_pi_adapter_itemNo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="8"
+            android:text="Medium Text" />
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_pi_adapter_stockCd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:text=" " />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:layout_weight="1" >
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_pi_adapter_drawNo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Medium Text" />
+    </LinearLayout>
+
+</LinearLayout>

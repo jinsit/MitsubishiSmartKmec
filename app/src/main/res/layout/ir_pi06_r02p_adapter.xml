@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@drawable/lv_bg350"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/comm_listitem4_height"
+        android:layout_weight="1">
+        <CheckBox
+            android:id = "@+id/chk_pi06_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/comm_listitem4_height"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_weight="8.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pi06_itemNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_pi06_itemNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="Medium Text"
+                android:textColor="@color/comm_popup_title_fontColor"
+                android:textSize="@dimen/comm_listitem_bold_fontSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pi06_itemNm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Large Text1"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pi06_drawNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="Large Text2"
+                android:textColor="@color/comm_boldFont_color"
+                android:textSize="@dimen/comm_listitem_bold_fontSize"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pi06_glNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="TextView2" />
+
+            <TextView
+                android:id="@+id/tv_pi06_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="TextView2" />
+
+            <TextView
+                android:id="@+id/tv_pi06_unitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="TextView2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pi06_partsImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_pi06_partsImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_picture" />
+    </LinearLayout>
+</LinearLayout>

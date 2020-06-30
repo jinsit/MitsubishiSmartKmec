@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <item android:drawable="@drawable/none_on_abc" android:state_checked="true"
+        android:state_pressed="false"/>
+    <item android:drawable="@drawable/none_off_abc" android:state_checked="false"
+        android:state_pressed="false"/>
+ 
+</selector>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_dm04_r01p_adapter_week"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="주차" />
+
+            <TextView
+                android:id="@+id/tv_dm04_r01p_adapter_dayofweek"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="요일" />
+
+            <TextView
+                android:id="@+id/tv_dm04_r01p_adapter_date"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="일자" />
+
+            <TextView
+                android:id="@+id/tv_dm04_r01p_adapter_worktime"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/border"
+                android:text="근무시간" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

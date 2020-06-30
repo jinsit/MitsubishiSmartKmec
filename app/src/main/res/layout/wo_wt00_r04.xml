@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="승관원 관리원번호" />
+
+            <TextView
+                android:id="@+id/tvEvelNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/bolder" android:layout_margin="1dp"
+                android:text="123123123"/>
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="ID" />
+            <TextView
+                android:id="@+id/tvselChkId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:background="@drawable/bolder" android:layout_margin="1dp"
+                android:text="kim1234 "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="점검시간" />
+
+            <TextView
+                android:id="@+id/tvFromTm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:background="@drawable/bolder" android:layout_margin="1dp"
+                android:text="12:00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text=" ~ "/>
+            <TextView
+                android:id="@+id/tvToTm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:background="@drawable/bolder" android:layout_margin="1dp"
+                android:text="18:00"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="이름" />
+
+            <TextView
+                android:id="@+id/tvEmpNm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical|left"
+                android:text="공성윤"/>
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="사업장" />
+            <TextView
+                android:id="@+id/tvBsBnm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" android:gravity="center_vertical|left"
+                android:text="인천 테스트 "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text130bg"
+            android:minHeight="@dimen/comm_listitem1_height"
+            android:paddingLeft="@dimen/comm_default_attendantsMargin"
+            android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+            <TextView
+                style="@style/colortext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="특이사항" />
+
+
+            <TextView
+                android:id="@+id/tvParticuls"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:maxLines="5"
+                android:layout_weight="8" android:gravity="center_vertical|left"
+                android:paddingLeft="10dp"
+                android:hint="특이사항이 있으면 클릭하세요."
+                android:background="@drawable/bolder" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_pi_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_listitem1_height"
+            android:background="@color/comm_listtitlebg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:text="검사항목/장치" />
+
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="전회결과" />
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="상태" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/listtitletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="6"
+                    android:text="비고" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_wo_mngCheckTableList"
+            android:layout_width="match_parent"  android:descendantFocusability="afterDescendants"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingLeft="@dimen/comm_small_attendantsMargin"
+            android:paddingRight="@dimen/comm_small_attendantsMargin">
+
+            <Button
+                android:id="@+id/btn_complete"
+                style="@style/btntext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/comm_default_topHalfMargin"
+                android:minHeight="@dimen/comm_completebutton_min_height"
+                android:text="닫기" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/btntext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/comm_default_topHalfMargin"
+                android:minHeight="@dimen/comm_completebutton_min_height"
+                android:text="저장(전송)" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        >
+        <!-- 545sp -->
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+
+</FrameLayout>
+
+

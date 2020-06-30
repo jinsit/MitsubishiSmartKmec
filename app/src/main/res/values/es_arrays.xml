@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string-array name="schType" >
+		<item id="defaultValue" text="dft">선택</item>
+		<item id="schType_Dept" text="dept">부서별조회</item>
+		<item id="schType_person" text="person">개인별조회</item>
+	</string-array>
+    
+    
+    
+</resources>

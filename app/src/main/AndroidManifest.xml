@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinsit.kmec"
+    android:versionCode="45"
+    android:versionName="3.20.1.2" >
+
+    <!-- NFC permission -->
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.jinsit.kmec.Container"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_01"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jinsit.kmec"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name="com.jinsit.kmec.Intro"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.GK.LI.GK_LI00_R00"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.GK.LO.GK_LO00_R00"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.HM.MP.HM_MP00_R00"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="com.jinsit.kmec.GK.LI.GK_LI00_R00" /> -->
+        <!-- 공지사항 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.NT.IR_NT00_R00"
+            android:screenOrientation="portrait" />
+        <!-- 그룹메시지 -->
+        <activity
+            android:name="com.jinsit.kmec.SM.GM.SM_GM00_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!-- 부가메뉴 -->
+        <!-- 환경설정 -->
+        <activity
+            android:name="com.jinsit.kmec.SM.CS.SM_CS00_R00"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jinsit.kmec.IP.IS.Wv" />
+
+        <!-- 클레임등록 -->
+        <activity
+            android:name="com.jinsit.kmec.SM.CR.SM_CR00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.SM.CR.SM_CR01_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.jinsit.kmec.SM.CR.SM_CR02_R00"
+            android:screenOrientation="portrait" />
+
+        <!-- CBSDATA -->
+        <activity
+            android:name="com.jinsit.kmec.IR.CD.IR_CD00_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!-- CBSDATA -->
+        <!-- 작업자현황 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.ES.IR_ES00_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 교육이수현황 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.EDS.IR_EDS00_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- NFC등록 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.NM.IR_NM00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.NM.IR_NM01_R00"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.IR.NM.IR_NM02_R00"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!--  -->
+        <activity
+            android:name="com.jinsit.kmec.IP.JS.IP_JS00_R00"
+            android:screenOrientation="portrait" />
+
+        <!-- 점검스케줄 -->
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS01_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS02_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS03_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS03_R01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IP.IS.IP_IS04_R00"
+            android:screenOrientation="portrait" />
+
+        <!-- 점검스케줄 캘린더 -->
+        <activity
+            android:name="com.jinsit.kmec.comm.CV.CalendarGridActivity"
+            android:screenOrientation="portrait" />
+        <!-- 부품 정보 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI01_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI02_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI03_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI04_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI05_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+
+
+        <activity
+            android:name="com.jinsit.kmec.IR.PI.IR_PI06_R00"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+-
+        <!-- 근무관리 -->
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM01_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM02_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM02_R01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM02_R00P"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM03_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM04_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM05_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.DM_DM05_R01P"
+            android:screenOrientation="portrait" />
+
+        <!-- 근태등록 시간조정에서 From To 셋팅하는 TimePicker Activity -->
+        <activity
+            android:name="com.jinsit.kmec.DM.DM.TimePickerStartEndActivity"
+            android:screenOrientation="portrait" />
+        <!-- 고객 정보 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.CI.IR_CI00_R00"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.jinsit.kmec.IR.CI.IR_CI00_R00_F"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.CI.IR_CI03_R02"
+            android:screenOrientation="portrait" />
+
+        <!-- 기술 정보 -->
+        <activity
+            android:name="com.jinsit.kmec.IR.TI.IR_TI00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.TI.IR_TI01_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.IR.TI.IR_TI02_R00"
+            android:screenOrientation="portrait" />
+        <!-- 공통캘린더 -->
+        <activity
+            android:name="com.jinsit.kmec.comm.CalendarGridNoDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.comm.CalendarPicker01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.WO_WO00_R00F"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_R01"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_R02"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_R03"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_R03_MNG"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_U03"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RI.WO_WT00_R04"
+            android:screenOrientation="portrait" />
+        <!-- 기타작업 -->
+        <!-- 이동,도착, 완료작업 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.MW.WT_MW00_R00"
+            android:screenOrientation="portrait" />
+        <!-- 시작, 완료 작업 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.MW.WT_MW00_R01"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 정기검사입회 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.MW.WT_MW00_R02"
+            android:screenOrientation="portrait" />
+        <!-- 사무정리 / 회의,교육에 NFC추가 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.MW.WT_MW00_R03"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <!--  사무실복귀만 따로 뺌 20171204 yowonsm -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.MW.WT_MW00_R04"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <!-- 완료목록 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.RI.CL_RI00_R01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.RI.CL_RI00_R02"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.MW.CL_MW00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.MW.CL_MW00_R01"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.MW.CL_MW00_R02"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.RJ.CL_RJ00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.WO.CL.TS.CL_TS00_R00"
+            android:screenOrientation="portrait" />
+        <!-- 완료목록 -->
+
+
+        <!-- 고장수리 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.TS.WO_TS00_R00"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.CM.CM_SaveReadPicture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jinsit.kmec.comm.jinLib.SignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.artifex.mupdfdemo.MuPDFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PdfViewerTheme" />
+        <activity
+            android:name="com.artifex.mupdfdemo.OutlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.artifex.mupdfdemo.PrintDialogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.DB.MasterDataDownload"
+            android:screenOrientation="portrait" />
+
+        <!-- 수리공사 -->
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RJ.WT_RJ00_R00"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jinsit.kmec.WO.WT.RJ.WT_RJ01_R00"
+            android:screenOrientation="portrait" />
+
+        <!-- GPS Service -->
+        <service
+            android:name="com.jinsit.kmec.comm.GPSService"
+            android:enabled="true" />
+        <service
+            android:name="com.jinsit.kmec.comm.TimerService"
+            android:enabled="true" />
+
+        <!-- Back Service -->
+        <service
+            android:name="com.jinsit.kmec.service.BackService"
+            android:enabled="true" />
+        <service
+            android:name="com.jinsit.kmec.service.NoticeService"
+            android:enabled="true" />
+        <service
+            android:name="com.jinsit.kmec.service.EmployeeSafeService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.jinsit.kmec.service.LoginStatusService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.jinsit.kmec.service.RealTimeJobHistoryService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.jinsit.kmec.comm.AlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.jinsit.kmec.comm.jinLib.DialogActivity"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.jinsit.kmec.HM.MP.AttendanceTagActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.jinsit.kmec.comm.PDFViewActivity"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>

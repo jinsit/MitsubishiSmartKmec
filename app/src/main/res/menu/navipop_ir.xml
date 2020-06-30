@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item 
+    android:id="@+id/menu_ir_NT" android:title="공지사항"/>
+<item
+    android:id="@+id/menu_ir_CI" android:title="고객정보"/>
+<item
+    android:id="@+id/menu_ir_PI" android:title="부품정보"/>
+<item
+    android:id="@+id/menu_ir_TI" android:title="기술정보"/>
+<item
+    android:id="@+id/menu_ir_ES" android:title="작업자현황"/>
+
+<item
+    android:id="@+id/menu_ir_EDS" android:title="교육이수현황"/>
+
+<item
+    android:id="@+id/menu_ir_CD" android:title="CBS DATA"/>
+<item
+    android:id="@+id/menu_ir_NM" android:title="NFC 등록"/>
+
+</menu>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_bg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/comm_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/comm_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="@string/btnStr_searchBldg" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_searchBldg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <!--<TextView
+                    android:id="@+id/btn_pi06_searchCarNo"
+                    style="@style/colortext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin"
+                    android:text="@string/btnStr_searchElev" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="청구형태" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_requestTp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="관련계약번호" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_refTp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="자재요청일자" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_requestDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pi06_freeReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="무상확인사유" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_freeReason"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_inputmenu"
+                    android:paddingLeft="@dimen/comm_default_attendantsMargin"
+                    android:paddingRight="@dimen/comm_default_attendantsMargin">
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="무상청구구분" />
+
+                    <TextView
+                        android:id="@+id/btn_pi06_freeRequest"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/comm_default_attendantsMargin"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_pi06_addParts"
+                    style="@style/mosttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn"
+                    android:gravity="center"
+                    android:text="청구품목" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_pi06_partsListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></ListView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_pi06_completePartsRequest"
+                    style="@style/mosttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn"
+                    android:gravity="center"
+                    android:text="부품신청등록" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp">
+
+        <!-- 545sp -->
+
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+</FrameLayout>

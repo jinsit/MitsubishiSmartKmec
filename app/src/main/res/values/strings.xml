@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_building">건물명을 조회하세요</string>
+    <string name="search_carno">호기를 조회하세요</string>
+    <string name="app_name">SmartKmec</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- WO_WT -->
+   <string name = "btnStr_workCategory">작업 분류 코드</string>
+   <string name = "btnStr_searchSupportDept">지원부서 조회</string>
+   <string name = "btnStr_searchBldg">건물정보 조회</string>
+   <string name = "btnStr_searchElev">호기정보 조회</string>
+   <string name = "btnStr_searchOrderNo">Order No</string>
+    <string name = "btnStr_searchClaimNo">Claim No</string>
+
+    <!-- WO_FR -->
+ <string name = "btnstr_reserverTime">예약시간</string>
+ <string name = "btnstr_rescueTime">승객 구출시간</string>
+ <string name = "msg_travelTimeRegistration">출발하시겠습니까?</string>
+ <string name = "msg_arrivalTimeRegistration">도착하시겠습니까?</string>
+ <string name = "msg_repaireCompletionTimeRegistration">수리완료하시겠습니까?</string>
+ <string name = "msg_completionTimeRegistration">완료하시겠습니까?</string>
+ <string name = "msg_reservationTimeRegistration">시간으로 예약하시겠습니까?</string>
+ 
+ <string name = "btnstr_fr_code">상태 코드</string>
+ <string name = "btnstr_fr_cbsCode1">부위 코드(대)</string>
+ <string name = "btnstr_fr_cbsCode2">부위 코드(중)</string>
+ <string name = "btnstr_fr_cbsCode3">부위 코드(소)</string>
+ <string name = "btnstr_fr_faultCode">불량 코드</string>
+ <string name = "btnstr_fr_procCode">처리 코드</string>
+ <string name = "btnstr_fr_dutyCode">책임 코드</string>
+ 
+ <string-array name="rivers">
+        <item >Brahmaputra</item>
+        <item >Ganges</item>
+        <item >Kaveri</item>
+        <item >Godavari</item>
+        <item >Periyar</item>
+        <item >Bharathappuzha (Nila)</item>
+        <item >Yamuna</item>
+    </string-array>
+    
+ 
+ 
+ <!-- NFCTestString -->
+  
+	 <string name="desc">Launcher image</string>
+	 <string name="info_string">Tap any MIFARE card/tag!</string>
+	 <string name="string_title">Sample App - MIFARE SDK Lite</string>
+     <string name="about_text">This sample demonstrates use of MIFARE SDK.Please visit MIFARE SDK page of www.mifare.net for this application source and more details.</string>
+     <string name="Note">Note: This sample app may change contents on tapped cards</string>
+     
+     <string name="beforeNFCTag">NFC Tag를 갖다 대세요.</string>
+     <string name="beforeSearch">조회하세요.</string>
+     
+     
+	<string name="version">1.6 (git build)</string>
+		<string name="accept">수락</string>
+	<string name="cancel">취소</string>
+	<string name="cannot_open_buffer">버퍼 열 수 없음</string>
+	<string name="cannot_open_document">문서 열 수 없음</string>
+	<string name="cannot_open_document_Reason">문서 열 수 없음: %1$s</string>
+	<string name="cannot_open_file_Path">파일 열 수 없음: %1$s</string>
+	<string name="choose_value">값 선택</string>
+	<string name="copied_to_clipboard">클립보드로 복사됨</string>
+	<string name="copy">복사</string>
+	<string name="copy_text">텍스트 복사</string>
+	<string name="copy_text_to_the_clipboard">클립보드로 텍스트 복사</string>
+	<string name="delete">삭제</string>
+	<string name="dismiss">무시</string>
+	<string name="document_has_changes_save_them_">문서에 변경사항이 있습니다. 저장?</string>
+	<string name="draw_annotation">주석달기</string>
+	<string name="edit_annotations">주석 편집</string>
+	<string name="enter_password">패스워드 입력</string>
+	<string name="entering_reflow_mode">리플로우 모드 시작</string>
+	<string name="fill_out_text_field">텍스트 입력란에 기입하십시오.</string>
+	<string name="format_currently_not_supported">현재 지원되지 않는 포맷</string>
+	<string name="highlight">주요기능</string>
+	<string name="ink">잉크</string>
+	<string name="leaving_reflow_mode">리플로우 모드 해제</string>
+	<string name="more">기타</string>
+	<string name="no">아니오</string>
+	<string name="no_further_occurrences_found">발견된 추가 발생 없음</string>
+	<string name="no_media_hint">PC와 스토리지 미디어를 공유하면 액세스할 수 없습니다.</string>
+	<string name="no_media_warning">스토리지 미디어 없음</string>
+	<string name="no_text_selected">선택된 텍스트 없음</string>
+	<string name="not_supported">지원 안됨</string>
+	<string name="nothing_to_save">저장 대상 없음</string>
+	<string name="okay">확인</string>
+	<string name="outline_title">목차</string>
+	<string name="parent_directory">[레벨 한 단계 상승]</string>
+	<string name="picker_title_App_Ver_Dir">%1$s %2$s: %3$s</string>
+	<string name="print">인쇄</string>
+	<string name="print_failed">인쇄 실패</string>
+	<string name="save">저장</string>
+	<string name="search">검색</string>
+	<string name="search_backwards">뒤로 검색</string>
+	<string name="search_document">문서 검색</string>
+	<string name="search_forwards">앞으로 검색</string>
+	<string name="searching_">검색 중&amp;#8230;</string>
+	<string name="select">선택</string>
+	<string name="select_text">텍스트 선택</string>
+	<string name="strike_out">삭제</string>
+	<string name="text_not_found">발견된 텍스트 없음</string>
+	<string name="toggle_links">하이라이트 및 링크 활성화</string>
+	<string name="underline">밑줄</string>
+	<string name="yes">예</string>
+	<string name="toggle_reflow_mode">Toggle reflow mode</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+        <TextView
+            android:id="@+id/navigationEmptyTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/btn_homemenu_sticker"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            />
+
+    </LinearLayout>
+
+	<FrameLayout
+        android:id="@+id/widgetFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <!--     <LinearLayout
+            android:id="@+id/LL_Tabbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_bottom_widget_height"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="10" > -->
+
+
+            
+		<LinearLayout
+            android:id="@+id/LL_Tabbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+                    
+             <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" android:gravity="bottom"
+                android:orientation="vertical" >
+              <Button
+                android:id="@+id/btn_naviIR"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_homemenu01" />
+            </LinearLayout>
+                    
+      
+             
+			<LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" android:gravity="bottom"
+                android:orientation="vertical" >
+            <Button
+                android:id="@+id/btn_naviDM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_homemenu02" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_naviHOME"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/btn_homemenu" />
+
+             <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" android:gravity="bottom"
+                android:orientation="vertical" >
+            <Button
+                android:id="@+id/btn_naviIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_homemenu03" />
+			</LinearLayout>
+ 			<LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" android:gravity="bottom"
+                android:orientation="vertical" >
+            <Button
+                android:id="@+id/btn_naviSM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_homemenu04" />
+			</LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

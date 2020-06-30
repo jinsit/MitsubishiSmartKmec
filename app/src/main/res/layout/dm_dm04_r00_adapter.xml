@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/comm_listitem3_height">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_name"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="성명" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_1week_sum"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="1주차계" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_1week_gaol"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="목표기준" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_1week_statutory"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="법정기준" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_2week_sum"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="1주차계" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_2week_gaol"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="목표기준" />
+
+            <TextView
+                android:id="@+id/tv_dm_adapter_2week_statutory"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="법정기준" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

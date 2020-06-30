@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tab1TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="점검이력"
+            android:gravity="center"
+            android:background="@color/comm_activity_title_bg"
+            android:textColor="@color/comm_edit_bg"
+            />
+        <TextView
+            android:id="@+id/tab2TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="점검계획"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_inquery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/comm_dialog_inquery_startend_date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/comm_listtitlebg"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/comm_listitem_margin"
+            style="@style/datatitletext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="일자" />
+
+
+        <TextView
+            style="@style/datatitletext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="호기" />
+
+        <TextView
+            style="@style/datatitletext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="점검자" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_ci03_inspectionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

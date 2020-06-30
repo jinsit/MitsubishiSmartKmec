@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/comm_inquerybg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+            android:layout_marginRight="@dimen/comm_small_attendantsMargin">
+            <TextView
+                style="@style/colortext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="일자" />
+
+            <TextView
+                style="@style/inputdatetext"
+                android:id="@+id/et_dm_registerDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/btn_dm_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_calendar" />
+
+            <TextView
+                android:id="@+id/btn_dm_inquery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_inquery" />
+            
+        </LinearLayout>
+        </LinearLayout>
+
+         <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1. 점검기본 O/T"
+            android:layout_gravity="center_vertical" />
+       <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:text="SubTotal " />
+       
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/tv_dm_basicOtSubTotalHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:text="0" />
+        
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:text=" 분"/>
+
+
+ 
+    </LinearLayout>
+  </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bgfirstline" />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listHeader_height"
+        android:background="@color/comm_listtitlebg">
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:text="건물명" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:text="호기"/>
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:text="작업시간대" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="OT" />
+    </LinearLayout>
+</LinearLayout>
+
+<ListView
+        android:id="@+id/lv_dm_basicOt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+  </ListView>
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2. 당직" 
+            android:layout_gravity="center_vertical"/>
+        
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/tv_dm_nightDutyHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_vertical" />
+      
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_nightHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 분"
+            android:layout_gravity="center_vertical" />
+
+       
+    </LinearLayout>
+ 
+</LinearLayout>
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3. 특별O/T"
+            android:layout_gravity="center_vertical"/>
+          
+        <TextView
+            android:id="@+id/btn_dm_makeOt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_write"/>
+       
+        <TextView
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubTotal " 
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/tv_dm_specialOtSubTotalHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_vertical" />
+        
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_specialHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 분"
+            android:layout_gravity="center_vertical"/>
+
+      
+    </LinearLayout>
+</LinearLayout>
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bgfirstline" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listHeader_height"
+        android:background="@color/comm_listtitlebg">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center" 
+            android:text="작업구분" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5" android:gravity="center"
+            android:layout_gravity="center"
+            android:text="건물명"/>
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:gravity="center"
+            android:layout_gravity="center"
+            android:text="상태" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"  android:gravity="center"
+            android:text="OT" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text=""/>
+   </LinearLayout>
+</LinearLayout>
+
+<ListView
+        android:id="@+id/lv_dm_specialOt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4. 근태등록"
+            android:layout_gravity="center_vertical"/>
+          
+        <TextView
+            android:id="@+id/btn_dm_makeAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_write"/>
+
+      
+    </LinearLayout>
+</LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listHeader_height"
+        android:background="@color/comm_listtitlebg">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin">
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:text="일자" />
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="종류"/>
+
+      
+
+        <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"  android:gravity="center"
+            android:layout_gravity="center"
+            android:text="상태"/>
+         <TextView
+            style="@style/listtitletext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:text=""/>
+   </LinearLayout>
+</LinearLayout>
+<ListView
+        android:id="@+id/lv_dm_attend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight="@dimen/comm_default_attendantsMargin" >
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4. Total" 
+            android:layout_gravity="center"/>
+
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/tv_dm_totalHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"/>
+        
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_totalHoursTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 분"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
+     <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lv_bglastline" />
+</LinearLayout>
+
+  <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="vertical">
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

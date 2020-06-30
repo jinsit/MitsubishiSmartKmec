@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textfirstlinebg" />
+            
+            <LinearLayout
+           			 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130firstbg">
+ <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="작업번호" />
+ 
+                <TextView
+                    style="@style/mosttext"
+                    android:id="@+id/tv_ci_jobNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+       			    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+               <LinearLayout
+           			 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="점검일자" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_workDt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" 
+       			    android:layout_marginRight="@dimen/comm_default_attendantsMargin"/>
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="점검이상"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_st"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="고장부위(대)"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_cbsCd1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+               android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="고장부위(중)" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_cbsCd2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="고장부위(소)"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_cbsCd3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+<LinearLayout
+                 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="불량코드"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_faultCd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            
+<LinearLayout
+               android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="처리코드"/>
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_procCd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+              android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="책임코드" />
+
+                <TextView
+                    style="@style/text"
+                    android:id="@+id/tv_ci_dutyCd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout
+                 android:layout_width="match_parent"
+           			 android:layout_height="wrap_content"
+           			 android:background="@drawable/tv_text130bg">
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+        			android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:text="중점점검항목"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_ci_deepDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_textlastlinebg" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

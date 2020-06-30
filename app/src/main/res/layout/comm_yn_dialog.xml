@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/comm_popup_default_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/comm_popup_default_margin"
+        android:layout_marginRight="@dimen/comm_popup_default_margin"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comm_listitem2_height"
+            android:gravity="center"
+            android:text="Medium Text"
+            android:textSize="@dimen/comm_textitem_66Size" />
+
+        <LinearLayout
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/comm_default_topMargin"
+            android:layout_marginTop="@dimen/comm_default_topMargin"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btn_dialogBtn_n" android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/comm_default_topMargin"
+                android:layout_marginRight="@dimen/comm_default_topHalfMargin"
+                android:background="@drawable/btn"
+                android:text="@string/cancel"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_dialogBtn_y" android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/comm_default_topHalfMargin"
+                android:layout_marginRight="@dimen/comm_default_topMargin"
+                android:text="@string/okay"
+                android:background="@drawable/btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

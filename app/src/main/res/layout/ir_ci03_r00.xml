@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tab1TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="점검이력"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tab2TextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="점검계획"
+            android:gravity="center"
+            android:background="@color/comm_activity_title_bg"
+            android:textColor="@color/comm_edit_bg"/>
+    </LinearLayout>
+    <include layout="@layout/comm_dialog_menu" />
+
+    <LinearLayout
+        android:id="@+id/lin_inquery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/comm_dialog_inquery_startend_date" />
+    </LinearLayout>
+
+  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130firstbg" >
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_ci03_modelNm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="전체" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_ci03_inspectionHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

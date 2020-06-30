@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item 
+    android:id="@+id/menu_ir_cbs_PL" android:title="승객갇힘조회"/>
+<item
+    android:id="@+id/menu_ir_cbs_RF" android:title="다발고장조회"/>
+<item
+    android:id="@+id/menu_ir_cbs_AS" android:title="A/S미처리조회"/>
+
+
+</menu>

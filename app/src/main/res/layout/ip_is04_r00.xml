@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_bg"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+
+            <TextView
+                style="@style/startenddatetitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="시작일" />
+            <TextView
+                android:id="@+id/tv_is_StartDate"
+                style="@style/inputdatetext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="~" />
+            <TextView
+                style="@style/startenddatetitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="만료일" />
+            <TextView
+                android:id="@+id/tv_is_EndDate"
+                style="@style/inputdatetext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+
+            <TextView
+                android:id="@+id/tv_is_bldgNm"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/search_building" />
+
+            <TextView
+                android:id="@+id/btn_is_bldgNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:background="@drawable/btn_inquerybldg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_text180firstbg">
+
+            <TextView
+                android:id="@+id/tv_is_CarNo"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/search_carno" />
+
+            <TextView
+                android:id="@+id/btn_is_CarNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                android:background="@drawable/btn_inquerycarno" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_inquery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/comm_dialog_inquery_startend_date" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_textlastlinebg" />
+
+        <ListView
+            android:id="@+id/lv_is_selectInfoTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp">
+        <!-- 545sp -->
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+
+</FrameLayout>

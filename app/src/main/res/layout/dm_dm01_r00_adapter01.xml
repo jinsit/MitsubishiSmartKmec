@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/lv_bg180">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/comm_listitem1_height"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin" >
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_adapter_bldgNm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_adapter_carNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"/>
+        
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_adapter_csTmFrTo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical" />
+        
+        <TextView
+            style="@style/text"
+            android:id="@+id/tv_dm_adapter_csTm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+     
+    </LinearLayout>
+
+</LinearLayout>

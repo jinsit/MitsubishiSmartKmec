@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/comm_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_dm_registerOt"
+                style="@style/btn_listmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_listmenu01"
+                android:gravity="center"
+                android:text="OT/근태 등록" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline" />
+
+            <TextView
+                android:id="@+id/btn_dm_registerAttends"
+                style="@style/btn_listmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_listmenu02"
+                android:gravity="center"
+                android:text="OT/근태 조회" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline" />
+
+            <TextView
+                android:id="@+id/btn_dm_approveOt"
+                style="@style/btn_listmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_listmenu03"
+                android:gravity="center"
+                android:text="OT/근태 승인" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline" />
+
+            <TextView
+                android:id="@+id/btn_dm_registerSelect"
+                style="@style/btn_listmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_listmenu01"
+                android:gravity="center"
+                android:text="근태 현황" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline" />
+
+            <TextView
+                android:id="@+id/btn_dm_registerManagement"
+                style="@style/btn_listmenutext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_listmenu02"
+                android:gravity="center"
+                android:text="근태 관리" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgline" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp">
+        <!-- 545sp -->
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/comm_bg"
+        android:orientation="vertical" >
+
+        <!-- 데이터 셋팅 레이아웃 -->
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/ll_detailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/comm_subTitle_height"
+                    android:background="@color/comm_subTitleBg"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/tv_wt_date"
+                        style="@style/subtitletext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="5"
+                        android:text="일자" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_workNm"
+                        style="@style/subtitletext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                        android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:text="정기점검" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height" >
+
+                    <TextView
+                        android:id="@+id/tv_wt_bldgInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:textColor="@color/comm_boldFont_color"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/tv_wt_addr"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="부서정보" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_csDeptNm"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="점검담당자1" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_empNm1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_empHp1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:autoLink="phone"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        style="@style/colortext"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="점검담당자2" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_empNm2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_empHp2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:autoLink="phone"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/comm_textitem110_height"
+                    android:weightSum="10" >
+
+                    <TextView
+                        android:id="@+id/tv_wt_st"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="계획"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+
+                    <TextView
+                        android:id="@+id/tv_wt_cs_fr"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Large Text"
+                        android:textSize="@dimen/comm_textitem_56Size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin" >
+
+                    <LinearLayout
+                        style="@style/btn_mlistmenutext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_default_topMargin"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                        android:paddingRight="@dimen/comm_small_attendantsMargin" >
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupInspector"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/radioButtonSingleInsp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:text="1인점검" />
+
+                            <RadioButton
+                                android:id="@+id/radioButtonDoubleInsp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="2인점검" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_wt_mainInspector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_default_topMargin"
+                        android:background="@drawable/btn_mlistmenu"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                        android:paddingRight="@dimen/comm_small_attendantsMargin"
+                        android:weightSum="4" >
+
+                        <TextView
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="주점검자" />
+
+                        <TextView
+                            android:id="@+id/tv_mainInspName"
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_mainInspCode"
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_wt_subInspector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/comm_default_topMargin"
+                        android:background="@drawable/btn_mlistmenu"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                        android:paddingRight="@dimen/comm_small_attendantsMargin"
+                        android:weightSum="4" >
+
+                        <TextView
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="부점검자" />
+
+                        <TextView
+                            android:id="@+id/tv_subInspName"
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_subInspCode"
+                            style="@style/btn_mlistmenutext"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center_vertical"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_wt_adminInfo"
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:background="@drawable/btn_mlistmenu"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin"
+                    android:text="관리자 정보" />
+
+                <TextView
+                    android:id="@+id/tv_wt_moveTm"
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tv_traveltime"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin"
+                    android:text="이동시간" />
+
+                <TextView
+                    android:id="@+id/tv_wt_arriveTm"
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tv_arrivaltime"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin"
+                    android:text="도착시간" />
+
+                <TextView
+                    android:id="@+id/tv_wt_completeTm"
+                    style="@style/btn_mlistmenutext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tv_completiontime"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin"
+                    android:text="완료시간" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="17.5sp"
+                    android:layout_marginTop="17.5sp"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/lv_wt_jobStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                    android:paddingRight="@dimen/comm_small_attendantsMargin">
+
+                    <Button
+                        android:id="@+id/btn_wt_jobComplete"
+                        style="@style/btntext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/comm_default_topHalfMargin"
+                        android:minHeight="@dimen/comm_completebutton_min_height"
+                        android:text="점검완료" />
+
+                    <Button
+                        android:id="@+id/btn_wt_sendData"
+                        style="@style/btntext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/comm_default_topHalfMargin"
+                        android:enabled="false"
+                        android:minHeight="@dimen/comm_completebutton_min_height"
+                        android:text="결과전송" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp" >
+
+        <!-- 545sp -->
+
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+</FrameLayout>

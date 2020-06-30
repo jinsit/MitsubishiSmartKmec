@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_popup_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+    android:orientation="vertical">
+    <TextView
+        style ="@style/colortext"
+        android:id="@+id/tv01_presentPwd"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comm_textitem140_height"
+        android:gravity="center"
+        android:text="현재 Password"/>
+
+    <EditText
+        android:id="@+id/et01_presentPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:ems="10"
+        android:maxLength="20"
+        android:singleLine="true"
+        >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        style ="@style/colortext"
+        android:id="@+id/tv02_newPwd"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comm_textitem140_height"
+        android:gravity="center"
+        android:text="변경 Password" />
+
+    <EditText
+        android:id="@+id/et02_newPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:ems="10" 
+        android:maxLength="20"
+        android:singleLine="true"
+       
+        />
+
+    <TextView
+        style ="@style/colortext"
+        android:id="@+id/tv03_newPwdAgain"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comm_textitem140_height"
+        android:gravity="center"
+        android:text="변경 Password 재확인" />
+
+    <EditText
+        android:id="@+id/et03_newPwdAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:ems="10" 
+        android:maxLength="20"
+        android:singleLine="true"
+       
+        />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        style ="@style/mosttext"
+        android:id="@+id/tv04_infoText"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+        android:layout_marginRight = "@dimen/comm_default_attendantsMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/comm_textitem140_height"
+        android:gravity="center"
+        android:text="Password를 변경하시겠습니까?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+        <TextView
+            style="@style/mosttext"
+            android:id="@+id/btn01_confirmChangePwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:text="변경" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent" 
+        android:layout_height="@dimen/comm_listitem2_height" android:gravity="center"
+        android:text="정기점검 결과를 관리자님께서 모두 확인하셨습니다."
+       />
+
+    <ImageView
+        android:id="@+id/iv_wo_sign"
+        style="@style/btn_mlistmenutext"
+        android:layout_width="343sp"
+        android:layout_height="247.5sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/comm_default_topMargin"
+        android:gravity="center"
+        android:paddingLeft="@dimen/comm_small_attendantsMargin"
+        android:paddingRight="@dimen/comm_small_attendantsMargin"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_sign_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/colortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comm_default_topMargin"
+            android:text="고객성함" />
+
+        <EditText
+            android:id="@+id/et_wo_consumerNm"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="내용을 입력하세요" />
+    </LinearLayout>
+		
+        <requestFocus />
+   
+  <Button
+                android:id="@+id/btn_wo_confirm"
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content" android:text="확인"
+                android:background="@drawable/btn" 
+                android:gravity="center" 
+                android:paddingLeft="@dimen/comm_small_attendantsMargin"
+                android:paddingRight="@dimen/comm_small_attendantsMargin" />
+
+
+</LinearLayout>
+
+  <FrameLayout
+	        android:id="@+id/fl_naviBar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" 
+	        android:layout_marginTop="0sp"
+	        android:paddingTop="0sp"
+	        >
+        <!-- 545sp -->
+	        <com.jinsit.kmec.widget.HomeNavigation
+	            android:id="@+id/hn_homeNavi"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:orientation="vertical">
+	        </com.jinsit.kmec.widget.HomeNavigation>
+	    </FrameLayout>
+
+	    
+</FrameLayout>

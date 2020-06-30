@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"   android:background="@drawable/tv_text180firstbg"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180firstbg" >
+
+        <TextView
+            android:id="@+id/tv01_cr02_dept"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="부서를 조회하세요." />
+
+        <TextView
+            android:id="@+id/tv03_cr02_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           
+            android:background="@drawable/btn_inquerydept" />
+    </LinearLayout>
+
+            
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              
+                android:background="@drawable/img_smallline" />
+
+            
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_text180firstbg" >
+
+        <TextView
+            android:id="@+id/tv02_cr02_register"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/comm_small_attendantsMargin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="등록자를 조회하세요." />
+
+        <TextView
+            android:id="@+id/tv04_cr02_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           
+            android:background="@drawable/btn_inqueryregistrant" />
+    </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv05_cr02_sch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+               android:background="@drawable/btn_search338"
+                
+                />
+        </LinearLayout>
+    </LinearLayout>
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_textlastlinebg" />
+    <ListView
+        android:id="@+id/lv01_cr02_dataList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+</LinearLayout>
+
+   <FrameLayout
+        android:id="@+id/fl_naviBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp" >
+
+        <!-- 545sp -->
+
+        <com.jinsit.kmec.widget.HomeNavigation
+            android:id="@+id/hn_homeNavi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.jinsit.kmec.widget.HomeNavigation>
+    </FrameLayout>
+
+</FrameLayout>

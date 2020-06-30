@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_dialog_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 현장명 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv01_cr02_bldgNm_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="1.현장명" />
+
+                <TextView
+                    android:id="@+id/tv01_cr02_bldgNm_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/beforeSearch"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <!-- 호기 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv02_cr02_carNo_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="2.호기" />
+
+                <TextView
+                    android:id="@+id/tv02_cr02_carNo_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_listitem_bold_fontSize" />
+            </LinearLayout>
+
+            <!-- 출하일자 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv03_cr02_dateToShip_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="3.출하일자" />
+
+                <TextView
+                    android:id="@+id/tv03_cr02_dateToShip_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 하자만료일 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv04_cr02_dateToEnd_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="4.하자만료일" />
+
+                <TextView
+                    android:id="@+id/tv04_cr02_dateToEnd_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 발생일자 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv05_cr02_dateToOccur_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="3.8"
+                    android:gravity="center_vertical"
+                    android:text="5.발생일자" />
+
+                <TextView
+                    android:id="@+id/tv05_cr02_dateToOccur_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 불만정도 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="6.불만정도" />
+
+                <TextView
+                    android:id="@+id/tv06_cr02_claimDegree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 조치요구일 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    android:id="@+id/tv07_cr02_dateToFix_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="3.8"
+                    android:gravity="center_vertical"
+                    android:text="7.조치요구일" />
+
+                <TextView
+                    android:id="@+id/tv07_cr02_dateToFix_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 서비스구분 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="8.서비스구분" />
+
+                <TextView
+                    android:id="@+id/tv08_cr02_svcType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 현상 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg"
+                android:minHeight="@dimen/comm_textitem140_height" >
+
+                <TextView
+                    android:id="@+id/tv09_cr02_status_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="9.현상" />
+
+                <TextView
+                    android:id="@+id/tv09_cr02_status_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 예상원인 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg"
+                android:minHeight="@dimen/comm_textitem140_height" >
+
+                <TextView
+                    android:id="@+id/tv10_cr02_expectedReason_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="10.예상원인" />
+
+                <TextView
+                    android:id="@+id/tv10_cr02_expectedReason_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 요구내용 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg"
+                android:minHeight="@dimen/comm_textitem140_height" >
+
+                <TextView
+                    android:id="@+id/tv11_cr02_demands_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="11.요구내용" />
+
+                <TextView
+                    android:id="@+id/tv11_cr02_demands_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 특이사항 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg"
+                android:minHeight="@dimen/comm_textitem140_height" >
+
+                <TextView
+                    android:id="@+id/tv12_cr02_sthSpecial_key"
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="12.특이사항" />
+
+                <TextView
+                    android:id="@+id/tv12_cr02_sthSpecial_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:maxLength="10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+
+            <!-- 사진 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_text130bg" >
+
+                <TextView
+                    style="@style/colortext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="13.사진" />
+
+                <TextView
+                    android:id="@+id/btn02_cr02_seePhotos"
+                    android:layout_width="0dip" android:layout_marginTop="@dimen/comm_default_topMargin"
+                    android:layout_marginBottom="@dimen/comm_default_topMargin"
+                    android:layout_height="wrap_content" android:background="@drawable/btn_nophoto"
+                    android:layout_marginRight="@dimen/comm_default_attendantsMargin"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:text="사진보기"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/comm_boldFont_color"
+                    android:textSize="@dimen/comm_textitem_56Size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

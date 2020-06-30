@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_listitem1_height"
+        android:layout_marginLeft="@dimen/comm_listitem_margin"
+        android:layout_marginRight="@dimen/comm_listitem_margin"
+        android:orientation="vertical" >
+
+           <TextView
+            android:id="@+id/tv_noticeTime"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="left|center"
+            android:maxLines="2"
+            android:text="Medium Text"
+            android:textColor="@color/comm_defaultFont_color"
+            android:textSize="@dimen/comm_listitem_default_fontSize" />
+        <TextView
+            android:id="@+id/tv_noticeSubject"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="Large Text"
+            android:textColor="@color/comm_boldFont_color"
+            android:textSize="@dimen/comm_listitem_bold_fontSize" />
+
+     
+    </LinearLayout>
+
+</LinearLayout>

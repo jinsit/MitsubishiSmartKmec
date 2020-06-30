@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="시작 시간"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_dm05_start_dt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:textStyle="bold"/>
+        <TimePicker
+            android:id="@+id/tp_timePicker_start"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:timePickerMode="spinner"></TimePicker>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="종료 시간"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_dm05_end_dt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:textStyle="bold"/>
+        <TimePicker
+            android:id="@+id/tp_timePicker_end"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:timePickerMode="spinner"></TimePicker>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_timepicker_ok"
+        android:background="@drawable/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
